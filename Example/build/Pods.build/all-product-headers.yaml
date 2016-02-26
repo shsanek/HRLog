@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/alexandershipin/Desktop/Project And Work/POD/HRLog/Example/build/Debug-iphonesimulator/HRLog.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "HRLog-Swift.h",
+          'external-contents': "/Users/alexandershipin/Desktop/Project And Work/POD/HRLog/Example/build/Debug-iphonesimulator/HRLog.framework/Headers/HRLog-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "HRLog-umbrella.h",
+          'external-contents': "/Users/alexandershipin/Desktop/Project And Work/POD/HRLog/Example/Pods/Target Support Files/HRLog/HRLog-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/alexandershipin/Desktop/Project And Work/POD/HRLog/Example/build/Debug-iphonesimulator/HRLog.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/alexandershipin/Desktop/Project And Work/POD/HRLog/Example/build/Pods.build/Debug-iphonesimulator/HRLog.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

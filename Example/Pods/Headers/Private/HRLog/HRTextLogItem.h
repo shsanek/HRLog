@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/logs/LogItems/Item/HRTextLogItem.h

@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/logs/loogbookmanger/HRLogbookManager.h
