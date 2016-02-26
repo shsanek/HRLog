@@ -1,0 +1,25 @@
+{
+  "name": "HRLog",
+  "version": "0.1.0",
+  "summary": "A short description of HRLog.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/HRLog",
+  "license": "MIT",
+  "authors": {
+    "Alexander Shipin": "shipin@sibers.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/HRLog.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "HRLog": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
