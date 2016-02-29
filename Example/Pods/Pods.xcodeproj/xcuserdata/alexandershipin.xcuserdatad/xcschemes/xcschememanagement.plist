@@ -24,25 +24,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-HRLoger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>050E71DB73855EF7A2B34BEA763495DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>05582DD9AA845BFBBC3AF003EC04FCA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6BE2DC527ED418CCE10CBAC7F42F3CD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74E6FFC41874CB98A9E617A0674A05F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B6B58101091925AA47C886CE091BCE83</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BE83FD6AD9CC6987F962F2E0FDDEDD1C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F919A8F576E7D868C27803858ED49BB1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

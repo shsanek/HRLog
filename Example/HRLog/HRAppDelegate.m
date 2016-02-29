@@ -6,6 +6,7 @@
 //  Copyright (c) 2016 Alexander Shipin. All rights reserved.
 //
 
+
 #import "HRAppDelegate.h"
 
 @implementation HRAppDelegate

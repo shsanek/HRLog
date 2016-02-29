@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		093EC6CCE55F30E0561312F7 /* Pods_HRLog_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF1FB20EF69D7CAD98684FF /* Pods_HRLog_Example.framework */; };
+		14ACCEB8ABAAE10A0499DDE7 /* Pods_HRLoger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7676D4707160DA87093DF5 /* Pods_HRLoger.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,6 +24,13 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6ECEE013D09D41FDDECC3E60 /* Pods_HRLog_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B91C7FF421661A1DC0CAB /* Pods_HRLog_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		E83C7BD01C8327F80038D2AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E83C7BCF1C8327F80038D2AD /* main.m */; };
+		E83C7BD51C8327F80038D2AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83C7BD41C8327F80038D2AD /* Assets.xcassets */; };
+		E83C7BE31C8327F80038D2AD /* HRLogerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E83C7BE21C8327F80038D2AD /* HRLogerTests.m */; };
+		E83C7BF21C83285E0038D2AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E83C7BEC1C83285E0038D2AD /* AppDelegate.m */; };
+		E83C7BF31C83285E0038D2AD /* HRVisualLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E83C7BEE1C83285E0038D2AD /* HRVisualLogViewController.m */; };
+		E83C7BF41C83285E0038D2AD /* HRViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E83C7BF01C83285E0038D2AD /* HRViewerViewController.m */; };
+		E83C7BF51C83285E0038D2AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83C7BF11C83285E0038D2AD /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +41,18 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = HRLog;
 		};
+		E83C7BDF1C8327F80038D2AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E83C7BC81C8327F80038D2AD;
+			remoteInfo = HRLoger;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		11AE66314E1964DB877FEB81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2A7676D4707160DA87093DF5 /* Pods_HRLoger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HRLoger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3928D5008874CBC612FCAD9A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5BA358B1EA16172B8718FDAD /* Pods-HRLog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRLog_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRLog_Tests/Pods-HRLog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DFAFA15E7E8BA675391B631 /* Pods-HRLog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRLog_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRLog_Example/Pods-HRLog_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,10 +77,26 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9ECA32337A39F26FA7E6EF51 /* HRLog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HRLog.podspec; path = ../HRLog.podspec; sourceTree = "<group>"; };
+		A790C534137E364CB9743E34 /* Pods-HRLoger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRLoger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRLoger/Pods-HRLoger.debug.xcconfig"; sourceTree = "<group>"; };
+		CA6D40988ADBF48744BD3708 /* Pods-HRLoger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRLoger.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRLoger/Pods-HRLoger.release.xcconfig"; sourceTree = "<group>"; };
 		CCACFFE965CCCFD84C4FDFC4 /* Pods-HRLog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRLog_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRLog_Example/Pods-HRLog_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DDF1FB20EF69D7CAD98684FF /* Pods_HRLog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HRLog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B8CEFA7E96C49484CC4AF7 /* Pods-HRLog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRLog_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRLog_Tests/Pods-HRLog_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E43B91C7FF421661A1DC0CAB /* Pods_HRLog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HRLog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83C7BC91C8327F80038D2AD /* HRLoger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRLoger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83C7BCF1C8327F80038D2AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E83C7BD41C8327F80038D2AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E83C7BD91C8327F80038D2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83C7BDE1C8327F80038D2AD /* HRLogerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRLogerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83C7BE21C8327F80038D2AD /* HRLogerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRLogerTests.m; sourceTree = "<group>"; };
+		E83C7BE41C8327F80038D2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83C7BEB1C83285E0038D2AD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E83C7BEC1C83285E0038D2AD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E83C7BED1C83285E0038D2AD /* HRVisualLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRVisualLogViewController.h; sourceTree = "<group>"; };
+		E83C7BEE1C83285E0038D2AD /* HRVisualLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRVisualLogViewController.m; sourceTree = "<group>"; };
+		E83C7BEF1C83285E0038D2AD /* HRViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRViewerViewController.h; sourceTree = "<group>"; };
+		E83C7BF01C83285E0038D2AD /* HRViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRViewerViewController.m; sourceTree = "<group>"; };
+		E83C7BF11C83285E0038D2AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +122,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E83C7BC61C8327F80038D2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14ACCEB8ABAAE10A0499DDE7 /* Pods_HRLoger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83C7BDB1C8327F80038D2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,6 +146,8 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for HRLog */,
 				6003F5B5195388D20070C39A /* Tests */,
+				E83C7BCA1C8327F80038D2AD /* HRLoger */,
+				E83C7BE11C8327F80038D2AD /* HRLogerTests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				9B83DD8A4B8BA11E25F13566 /* Pods */,
@@ -110,6 +159,8 @@
 			children = (
 				6003F58A195388D20070C39A /* HRLog_Example.app */,
 				6003F5AE195388D20070C39A /* HRLog_Tests.xctest */,
+				E83C7BC91C8327F80038D2AD /* HRLoger.app */,
+				E83C7BDE1C8327F80038D2AD /* HRLogerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +174,7 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				DDF1FB20EF69D7CAD98684FF /* Pods_HRLog_Example.framework */,
 				E43B91C7FF421661A1DC0CAB /* Pods_HRLog_Tests.framework */,
+				2A7676D4707160DA87093DF5 /* Pods_HRLoger.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +182,7 @@
 		6003F593195388D20070C39A /* Example for HRLog */ = {
 			isa = PBXGroup;
 			children = (
+				E83C7B751C82FECD0038D2AD /* Soket */,
 				6003F59C195388D20070C39A /* HRAppDelegate.h */,
 				6003F59D195388D20070C39A /* HRAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -189,8 +242,51 @@
 				CCACFFE965CCCFD84C4FDFC4 /* Pods-HRLog_Example.release.xcconfig */,
 				5BA358B1EA16172B8718FDAD /* Pods-HRLog_Tests.debug.xcconfig */,
 				E3B8CEFA7E96C49484CC4AF7 /* Pods-HRLog_Tests.release.xcconfig */,
+				A790C534137E364CB9743E34 /* Pods-HRLoger.debug.xcconfig */,
+				CA6D40988ADBF48744BD3708 /* Pods-HRLoger.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E83C7B751C82FECD0038D2AD /* Soket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Soket;
+			sourceTree = "<group>";
+		};
+		E83C7BCA1C8327F80038D2AD /* HRLoger */ = {
+			isa = PBXGroup;
+			children = (
+				E83C7BEB1C83285E0038D2AD /* AppDelegate.h */,
+				E83C7BEC1C83285E0038D2AD /* AppDelegate.m */,
+				E83C7BED1C83285E0038D2AD /* HRVisualLogViewController.h */,
+				E83C7BEE1C83285E0038D2AD /* HRVisualLogViewController.m */,
+				E83C7BEF1C83285E0038D2AD /* HRViewerViewController.h */,
+				E83C7BF01C83285E0038D2AD /* HRViewerViewController.m */,
+				E83C7BF11C83285E0038D2AD /* Main.storyboard */,
+				E83C7BD41C8327F80038D2AD /* Assets.xcassets */,
+				E83C7BD91C8327F80038D2AD /* Info.plist */,
+				E83C7BCE1C8327F80038D2AD /* Supporting Files */,
+			);
+			path = HRLoger;
+			sourceTree = "<group>";
+		};
+		E83C7BCE1C8327F80038D2AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E83C7BCF1C8327F80038D2AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E83C7BE11C8327F80038D2AD /* HRLogerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E83C7BE21C8327F80038D2AD /* HRLogerTests.m */,
+				E83C7BE41C8327F80038D2AD /* Info.plist */,
+			);
+			path = HRLogerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +333,44 @@
 			productReference = 6003F5AE195388D20070C39A /* HRLog_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E83C7BC81C8327F80038D2AD /* HRLoger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E83C7BE91C8327F80038D2AD /* Build configuration list for PBXNativeTarget "HRLoger" */;
+			buildPhases = (
+				BB039AD9335FA6F33AC4997D /* Check Pods Manifest.lock */,
+				E83C7BC51C8327F80038D2AD /* Sources */,
+				E83C7BC61C8327F80038D2AD /* Frameworks */,
+				E83C7BC71C8327F80038D2AD /* Resources */,
+				D547151EEE62019C5FAECEC5 /* Embed Pods Frameworks */,
+				926DFA86285F724C541A8603 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HRLoger;
+			productName = HRLoger;
+			productReference = E83C7BC91C8327F80038D2AD /* HRLoger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E83C7BDD1C8327F80038D2AD /* HRLogerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E83C7BEA1C8327F80038D2AD /* Build configuration list for PBXNativeTarget "HRLogerTests" */;
+			buildPhases = (
+				E83C7BDA1C8327F80038D2AD /* Sources */,
+				E83C7BDB1C8327F80038D2AD /* Frameworks */,
+				E83C7BDC1C8327F80038D2AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E83C7BE01C8327F80038D2AD /* PBXTargetDependency */,
+			);
+			name = HRLogerTests;
+			productName = HRLogerTests;
+			productReference = E83C7BDE1C8327F80038D2AD /* HRLogerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +383,13 @@
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					E83C7BC81C8327F80038D2AD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					E83C7BDD1C8327F80038D2AD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E83C7BC81C8327F80038D2AD;
 					};
 				};
 			};
@@ -267,6 +408,8 @@
 			targets = (
 				6003F589195388D20070C39A /* HRLog_Example */,
 				6003F5AD195388D20070C39A /* HRLog_Tests */,
+				E83C7BC81C8327F80038D2AD /* HRLoger */,
+				E83C7BDD1C8327F80038D2AD /* HRLogerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +430,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83C7BC71C8327F80038D2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83C7BD51C8327F80038D2AD /* Assets.xcassets in Resources */,
+				E83C7BF51C83285E0038D2AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83C7BDC1C8327F80038D2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +512,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		926DFA86285F724C541A8603 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HRLoger/Pods-HRLoger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB039AD9335FA6F33AC4997D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		D4175DB48A61922718C1159F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +555,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HRLog_Tests/Pods-HRLog_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D547151EEE62019C5FAECEC5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HRLoger/Pods-HRLoger-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F773A137ED0C168F2EFA907F /* Embed Pods Frameworks */ = {
@@ -404,6 +608,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E83C7BC51C8327F80038D2AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83C7BF21C83285E0038D2AD /* AppDelegate.m in Sources */,
+				E83C7BD01C8327F80038D2AD /* main.m in Sources */,
+				E83C7BF41C83285E0038D2AD /* HRViewerViewController.m in Sources */,
+				E83C7BF31C83285E0038D2AD /* HRVisualLogViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83C7BDA1C8327F80038D2AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83C7BE31C8327F80038D2AD /* HRLogerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -411,6 +634,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* HRLog_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		E83C7BE01C8327F80038D2AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E83C7BC81C8327F80038D2AD /* HRLoger */;
+			targetProxy = E83C7BDF1C8327F80038D2AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,6 +744,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HRLog/HRLog-Prefix.pch";
 				INFOPLIST_FILE = "HRLog/HRLog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +761,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HRLog/HRLog-Prefix.pch";
 				INFOPLIST_FILE = "HRLog/HRLog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,6 +813,92 @@
 			};
 			name = Release;
 		};
+		E83C7BE51C8327F80038D2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A790C534137E364CB9743E34 /* Pods-HRLoger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HRLoger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.shipin.HRLoger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E83C7BE61C8327F80038D2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6D40988ADBF48744BD3708 /* Pods-HRLoger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HRLoger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.shipin.HRLoger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E83C7BE71C8327F80038D2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HRLogerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.shipin.HRLogerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HRLoger.app/Contents/MacOS/HRLoger";
+			};
+			name = Debug;
+		};
+		E83C7BE81C8327F80038D2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HRLogerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = alexander.shipin.HRLogerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HRLoger.app/Contents/MacOS/HRLoger";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -609,6 +925,24 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E83C7BE91C8327F80038D2AD /* Build configuration list for PBXNativeTarget "HRLoger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E83C7BE51C8327F80038D2AD /* Debug */,
+				E83C7BE61C8327F80038D2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E83C7BEA1C8327F80038D2AD /* Build configuration list for PBXNativeTarget "HRLogerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E83C7BE71C8327F80038D2AD /* Debug */,
+				E83C7BE81C8327F80038D2AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -21,7 +21,7 @@ NSString* const kHRImageLogItemStoragePath = @"/hrlog/storage";
 
 + (void)clearStorage {
     NSError* error = nil;
-    [[NSFileManager defaultManager] removeItemAtPath:kHRImageLogItemStoragePath
+    [[NSFileManager defaultManager] removeItemAtPath:[self dataPath]
                                                error:&error];
     if (error) {
         NSLog(@"HRImageLogItem  <%@>" ,error);
@@ -79,11 +79,16 @@ NSString* const kHRImageLogItemStoragePath = @"/hrlog/storage";
     return [NSString stringWithFormat:@"image%ld",(long)numberOfImage];
 }
 
-+ (NSString*) pathForName:(NSString*) name{
-    NSError *error;
++ (NSString*) dataPath{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = paths.firstObject; // Get documents folder
     NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:kHRImageLogItemStoragePath];
+    return dataPath;
+}
+
++ (NSString*) pathForName:(NSString*) name{
+    NSError *error;
+    NSString *dataPath = [self dataPath];
     if (![[NSFileManager defaultManager] fileExistsAtPath:dataPath] )
         [[NSFileManager defaultManager] createDirectoryAtPath:dataPath withIntermediateDirectories:NO attributes:nil error:&error];
     if (error) {

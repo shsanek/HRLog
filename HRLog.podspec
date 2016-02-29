@@ -7,34 +7,20 @@
 #
 
 Pod::Spec.new do |s|
+  s.platform = :osx, '9.0'
+  s.platform = :osx, '10.11'
   s.name             = "HRLog"
   s.version          = "0.1.0"
-  s.summary          = "A short description of HRLog."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/HRLog"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "ASLDKLAMSLKD SDLKAMSLDKMLAS LKASMLDKMALSKMD"
+  s.description      = "Description OSIJD OIJASD OISADJ AOSIDJ AOISJD OSAIDJ OAISJD OAISJD OAISJD OIASJD "
+  s.homepage         = "https://github.com/shsanek/HRLog"
   s.license          = 'MIT'
   s.author           = { "Alexander Shipin" => "shipin@sibers.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/HRLog.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.platform     = :ios, '7.0'
+  s.source           = { :git => "https://github.com/shsanek/HRLog.git", :tag => s.version.to_s }
   s.requires_arc = true
-
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'HRLog' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
 end

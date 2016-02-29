@@ -5,8 +5,10 @@ target 'HRLog_Example', :exclusive => true do
   pod 'HRLog', :path => '../'
 end
 
+target 'HRLoger', :exclusive => true do
+    pod 'HRLog', :path => '../'
+end
+
 target 'HRLog_Tests', :exclusive => true do
   pod 'HRLog', :path => '../'
-
-  
 end

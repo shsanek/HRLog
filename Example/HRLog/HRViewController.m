@@ -7,6 +7,7 @@
 //
 
 #import "HRViewController.h"
+#import "HRClientSocket.h"
 
 @interface HRViewController ()
 
@@ -14,16 +15,15 @@
 
 @implementation HRViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    HRQueue* queue = [[HRQueue alloc] initWithQueue:dispatch_queue_create("bac", NULL)];
+    HRClientSocket* client = [[HRClientSocket alloc] initWithQueue:queue];
+    [client connectIP:nil port:3426];
+    [client sendData:[NSKeyedArchiver archivedDataWithRootObject:@"broded"]
+    completionBloack:^(BOOL isFinish) {
+        
+    }];
 }
 
 @end

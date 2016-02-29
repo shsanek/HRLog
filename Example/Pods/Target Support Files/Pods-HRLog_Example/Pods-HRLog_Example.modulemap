@@ -1,6 +1,0 @@
-framework module Pods_HRLog_Example {
-  umbrella header "Pods-HRLog_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

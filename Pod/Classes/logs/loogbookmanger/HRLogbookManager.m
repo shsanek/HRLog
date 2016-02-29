@@ -16,7 +16,7 @@ void HRLog(NSString* format,...) {
                                           arguments:argumentList];
     va_end(argumentList);
     NSLog(@"%@",text);
-    [[HRLogbookManager sharedManager].logboook addLogItem:[[HRTextLogItem alloc] initWitfFormat:@"%@",text]];
+    [[HRLogbookManager sharedManager] log:[[HRTextLogItem alloc] initWitfFormat:@"%@",text]];
 }
 void HRNameLog(NSString* name,NSString* format,...) {
     va_list argumentList;
@@ -25,8 +25,8 @@ void HRNameLog(NSString* name,NSString* format,...) {
                                                    arguments:argumentList];
     va_end(argumentList);
     NSLog(@"%@",text);
-    [[HRLogbookManager sharedManager].logboook addLogItem:[[HRTextLogItem alloc] initWitfName:name
-                                                                                       format:@"%@",text]];
+    [[HRLogbookManager sharedManager] log:[[HRTextLogItem alloc] initWitfName:name
+                                                                       format:@"%@",text]];
 }
 void HRBeginLog(NSString* format,...){
     va_list argumentList;
@@ -35,7 +35,7 @@ void HRBeginLog(NSString* format,...){
                                                    arguments:argumentList];
     va_end(argumentList);
     NSLog(@"%@",text);
-    [[HRLogbookManager sharedManager].logboook addedNextLevelLogItem:[[HRTextLogItem alloc] initWitfFormat:@"%@",text]];
+    [[HRLogbookManager sharedManager] beginLog:[[HRTextLogItem alloc] initWitfFormat:@"%@",text]];
 }
 void HRBeginNameLog(NSString* name,NSString* format,...){
     va_list argumentList;
@@ -44,13 +44,16 @@ void HRBeginNameLog(NSString* name,NSString* format,...){
                                                    arguments:argumentList];
     va_end(argumentList);
     NSLog(@"%@",text);
-    [[HRLogbookManager sharedManager].logboook addedNextLevelLogItem:[[HRTextLogItem alloc] initWitfName:name
-                                                                                                  format:@"%@",text]];
+    [[HRLogbookManager sharedManager] beginLog:[[HRTextLogItem alloc] initWitfName:name
+                                                                            format:@"%@",text]];
 }
 
 void HREndLog(){
-    [[HRLogbookManager sharedManager].logboook endLevel];
+    [[HRLogbookManager sharedManager] endLog];
 }
+
+
+
 
 @implementation HRLogbookManager
 
@@ -64,6 +67,18 @@ void HREndLog(){
     return manger;
 }
 
++ (dispatch_queue_t) backgroundQueue{
+    static dispatch_queue_t queuq;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        queuq = dispatch_queue_create("hrLogBookCreate", NULL);
+    });
+    return queuq;
+}
+
+- (void) load{
+}
+
 - (instancetype)init{
     self = [super init];
     if (self) {
@@ -74,6 +89,25 @@ void HREndLog(){
 
 - (NSData *)dataFromCurrentlogbook {
     return [NSKeyedArchiver archivedDataWithRootObject:self.logboook];
+}
+
+
+- (void) log:(HRLogItem*) log{
+    dispatch_async([HRLogbookManager backgroundQueue], ^{
+        [self.logboook addLogItem:log];
+    });
+}
+
+- (void) beginLog:(HRLogItem*) log{
+    dispatch_async([HRLogbookManager backgroundQueue], ^{
+        [self.logboook addedNextLevelLogItem:log];
+    });
+}
+
+- (void) endLog{
+    dispatch_async([HRLogbookManager backgroundQueue], ^{
+        [self.logboook endLevel];
+    });
 }
 
 
