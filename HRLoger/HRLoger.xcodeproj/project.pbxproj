@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		D64A90556ABCDD3F15A9F98D /* libPods-HRLogerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0EF875CB4F812E4432D6A0 /* libPods-HRLogerTests.a */; };
 		E5F2ECFCFA2330625D39F714 /* libPods-HRLoger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0FE00F1950BDA9EE3457E9 /* libPods-HRLoger.a */; };
-		E8ECAC5B1C8AD53000945EC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ECAC5A1C8AD53000945EC2 /* AppDelegate.m */; };
 		E8ECAC5E1C8AD53000945EC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ECAC5D1C8AD53000945EC2 /* main.m */; };
-		E8ECAC611C8AD53000945EC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ECAC601C8AD53000945EC2 /* ViewController.m */; };
-		E8ECAC641C8AD53000945EC2 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ECAC631C8AD53000945EC2 /* Document.m */; };
 		E8ECAC661C8AD53000945EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8ECAC651C8AD53000945EC2 /* Assets.xcassets */; };
-		E8ECAC691C8AD53000945EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8ECAC671C8AD53000945EC2 /* Main.storyboard */; };
 		E8ECAC741C8AD53000945EC2 /* HRLogerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ECAC731C8AD53000945EC2 /* HRLogerTests.m */; };
+		E8ECACE11C8ED0DD00945EC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ECACDB1C8ED0DD00945EC2 /* AppDelegate.m */; };
+		E8ECACE21C8ED0DD00945EC2 /* HRVisualLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ECACDD1C8ED0DD00945EC2 /* HRVisualLogViewController.m */; };
+		E8ECACE31C8ED0DD00945EC2 /* HRViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ECACDF1C8ED0DD00945EC2 /* HRViewerViewController.m */; };
+		E8ECACE41C8ED0DD00945EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8ECACE01C8ED0DD00945EC2 /* Main.storyboard */; };
+		E8ECACE71C8ED11000945EC2 /* HRLogApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ECACE61C8ED11000945EC2 /* HRLogApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +37,24 @@
 		D172C8B33008B28C52802155 /* Pods-HRLoger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRLoger.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRLoger/Pods-HRLoger.release.xcconfig"; sourceTree = "<group>"; };
 		D9EE54FFBAD38CBD6E673705 /* Pods-HRLogerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRLogerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRLogerTests/Pods-HRLogerTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8ECAC561C8AD53000945EC2 /* HRLoger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRLoger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8ECAC591C8AD53000945EC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E8ECAC5A1C8AD53000945EC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E8ECAC5D1C8AD53000945EC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E8ECAC5F1C8AD53000945EC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E8ECAC601C8AD53000945EC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E8ECAC621C8AD53000945EC2 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
-		E8ECAC631C8AD53000945EC2 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 		E8ECAC651C8AD53000945EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8ECAC681C8AD53000945EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8ECAC6A1C8AD53000945EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8ECAC6F1C8AD53000945EC2 /* HRLogerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRLogerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8ECAC731C8AD53000945EC2 /* HRLogerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRLogerTests.m; sourceTree = "<group>"; };
 		E8ECAC751C8AD53000945EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8ECACDA1C8ED0DD00945EC2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8ECACDB1C8ED0DD00945EC2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8ECACDC1C8ED0DD00945EC2 /* HRVisualLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRVisualLogViewController.h; sourceTree = "<group>"; };
+		E8ECACDD1C8ED0DD00945EC2 /* HRVisualLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRVisualLogViewController.m; sourceTree = "<group>"; };
+		E8ECACDE1C8ED0DD00945EC2 /* HRViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRViewerViewController.h; sourceTree = "<group>"; };
+		E8ECACDF1C8ED0DD00945EC2 /* HRViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRViewerViewController.m; sourceTree = "<group>"; };
+		E8ECACE01C8ED0DD00945EC2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E8ECACE51C8ED11000945EC2 /* HRLogApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRLogApplication.h; sourceTree = "<group>"; };
+		E8ECACE61C8ED11000945EC2 /* HRLogApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRLogApplication.m; sourceTree = "<group>"; };
+		E8ECACE81C8ED15E00945EC2 /* HRAssertDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRAssertDefine.h; sourceTree = "<group>"; };
+		E8ECACE91C8ED15E00945EC2 /* HRCodingSupprotDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRCodingSupprotDefine.h; sourceTree = "<group>"; };
+		E8ECACEA1C8ED15E00945EC2 /* HRKeyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRKeyDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +120,19 @@
 		E8ECAC581C8AD53000945EC2 /* HRLoger */ = {
 			isa = PBXGroup;
 			children = (
-				E8ECAC591C8AD53000945EC2 /* AppDelegate.h */,
-				E8ECAC5A1C8AD53000945EC2 /* AppDelegate.m */,
-				E8ECAC5F1C8AD53000945EC2 /* ViewController.h */,
-				E8ECAC601C8AD53000945EC2 /* ViewController.m */,
-				E8ECAC621C8AD53000945EC2 /* Document.h */,
-				E8ECAC631C8AD53000945EC2 /* Document.m */,
+				E8ECACE81C8ED15E00945EC2 /* HRAssertDefine.h */,
+				E8ECACE91C8ED15E00945EC2 /* HRCodingSupprotDefine.h */,
+				E8ECACEA1C8ED15E00945EC2 /* HRKeyDefine.h */,
+				E8ECACDA1C8ED0DD00945EC2 /* AppDelegate.h */,
+				E8ECACDB1C8ED0DD00945EC2 /* AppDelegate.m */,
+				E8ECACDC1C8ED0DD00945EC2 /* HRVisualLogViewController.h */,
+				E8ECACDD1C8ED0DD00945EC2 /* HRVisualLogViewController.m */,
+				E8ECACDE1C8ED0DD00945EC2 /* HRViewerViewController.h */,
+				E8ECACDF1C8ED0DD00945EC2 /* HRViewerViewController.m */,
+				E8ECACE01C8ED0DD00945EC2 /* Main.storyboard */,
 				E8ECAC651C8AD53000945EC2 /* Assets.xcassets */,
-				E8ECAC671C8AD53000945EC2 /* Main.storyboard */,
+				E8ECACE51C8ED11000945EC2 /* HRLogApplication.h */,
+				E8ECACE61C8ED11000945EC2 /* HRLogApplication.m */,
 				E8ECAC6A1C8AD53000945EC2 /* Info.plist */,
 				E8ECAC5C1C8AD53000945EC2 /* Supporting Files */,
 			);
@@ -232,7 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8ECAC661C8AD53000945EC2 /* Assets.xcassets in Resources */,
-				E8ECAC691C8AD53000945EC2 /* Main.storyboard in Resources */,
+				E8ECACE41C8ED0DD00945EC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,10 +354,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8ECAC641C8AD53000945EC2 /* Document.m in Sources */,
-				E8ECAC611C8AD53000945EC2 /* ViewController.m in Sources */,
+				E8ECACE11C8ED0DD00945EC2 /* AppDelegate.m in Sources */,
 				E8ECAC5E1C8AD53000945EC2 /* main.m in Sources */,
-				E8ECAC5B1C8AD53000945EC2 /* AppDelegate.m in Sources */,
+				E8ECACE71C8ED11000945EC2 /* HRLogApplication.m in Sources */,
+				E8ECACE31C8ED0DD00945EC2 /* HRViewerViewController.m in Sources */,
+				E8ECACE21C8ED0DD00945EC2 /* HRVisualLogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,17 +379,6 @@
 			targetProxy = E8ECAC701C8AD53000945EC2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E8ECAC671C8AD53000945EC2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8ECAC681C8AD53000945EC2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E8ECAC761C8AD53000945EC2 /* Debug */ = {
