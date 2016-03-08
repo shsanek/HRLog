@@ -1,0 +1,14 @@
+PODS:
+  - HRLog (0.0.1)
+
+DEPENDENCIES:
+  - HRLog (from `../`)
+
+EXTERNAL SOURCES:
+  HRLog:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HRLog: 4a9e31f6f829ac14135953cf94a7f9845b62b930
+
+COCOAPODS: 0.39.0

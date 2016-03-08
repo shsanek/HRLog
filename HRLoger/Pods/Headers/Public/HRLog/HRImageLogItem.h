@@ -1,0 +1,1 @@
+../../../../../HRLog/logs/LogItems/Item/HRImageLogItem.h

@@ -1,0 +1,1 @@
+../../../../../HRLog/support/HRCodingSupprotDefine.h
