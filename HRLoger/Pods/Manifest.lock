@@ -1,5 +1,5 @@
 PODS:
-  - HRLog (0.1.0):
+  - HRLog (0.1.1):
     - HRSocket
   - HRSocket (0.0.1)
 
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HRLog: 71562b1368ec43fda945707cc6cb9738d8d09973
+  HRLog: 30d1ec02d7f730f28d4cba29ea11cbbe427ddf29
   HRSocket: 8d4208fa6ca64a89ffef52a6405063e130e1c50d
 
 COCOAPODS: 0.39.0
