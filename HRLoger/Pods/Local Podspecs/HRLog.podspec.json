@@ -4,7 +4,7 @@
     "ios": "8.0",
     "osx": "10.10"
   },
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "HRLog pof for custom loger",
   "description": "HRLog pod for custom log and visual debuger and sending bag reports",
   "license": "MIT",
