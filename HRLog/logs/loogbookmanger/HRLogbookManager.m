@@ -55,13 +55,13 @@ void HREndLog(){
 }
 
 void HRObjectLog(id object){
-    NSLog(@"%@",[object dictionary]);
+    NSLog(@"%@",[object description]);
     HRLogItem* item = [HRLogFactory logItemFromObject:object];
     [[HRLogbookManager sharedManager] log:item];
 }
 
 void HRNameObjectLog(NSString* name,id object){
-    NSLog(@"%@",[object dictionary]);
+    NSLog(@"%@",[object description]);
     HRLogItem* item = [HRLogFactory logItemFromObject:object];
     item.name = name;
     [[HRLogbookManager sharedManager] log:item];

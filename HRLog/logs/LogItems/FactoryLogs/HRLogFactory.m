@@ -15,6 +15,15 @@
     if ([object respondsToSelector:@selector(hrLogItemFromObject)]) {
         return [object hrLogItemFromObject];
     }
+    if ([object respondsToSelector:@selector(hrLogPropertyList)]) {
+        HRTextLogItem* item = [[HRTextLogItem alloc] initWitfFormat:@"<%@>",NSStringFromClass( [object class])];
+        NSArray* list = [object hrLogPropertyList];
+        for (NSString* text in list) {
+            HRLogItem* item2 = [self logItemFromObject:[object valueForKey:text]];
+            item2.name = text;
+            [item addSubitems:item2];
+        }
+    }
     return [[HRTextLogItem alloc] initWitfFormat:@"%@",[object description]];
 }
 

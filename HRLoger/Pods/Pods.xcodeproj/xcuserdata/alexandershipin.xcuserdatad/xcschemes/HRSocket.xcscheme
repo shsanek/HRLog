@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3477F8CA7F9403891EB5CAE4'
+               BlueprintIdentifier = 'F29804B7AB1DB45EE99FAC59'
                BlueprintName = 'HRSocket'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libHRSocket.a'>

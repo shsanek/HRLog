@@ -15,6 +15,12 @@
 
 @end
 
+@protocol  HRLogFactoryPropertyList <NSObject>
+
++ (NSArray<NSString*>*) hrLogPropertyList;
+
+@end
+
 @interface HRLogFactory : NSObject
 
 + (HRLogItem*) logItemFromObject:(id) object;
