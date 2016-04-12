@@ -7,20 +7,24 @@
 //
 
 #import "HRViewerViewController.h"
-#import <HRLog/HRLogbook.h>
+#import <HRLog/HRLogbookManager.h>
 
 HRImplementationKey(kHRViewerViewControllerOpenNotification);
 
-@interface HRViewerViewController ()<NSOutlineViewDataSource,NSOutlineViewDelegate>
+@interface HRViewerViewController ()<NSOutlineViewDataSource,NSOutlineViewDelegate,HRLogbookManagerDelegate>
 
 @property (nonatomic,strong) IBOutlet NSOutlineView* outlineView;
 @property (nonatomic,strong) IBOutlet NSTableColumn* dateColumn;
 @property (nonatomic,strong) IBOutlet NSTableColumn* nameColumn;
 @property (nonatomic,strong) IBOutlet NSTableColumn* descriptionColumn;
 
+
 @end
 
-@implementation HRViewerViewController
+@implementation HRViewerViewController{
+    HRLogbook* _logbook;
+}
+
 
 
 
@@ -32,32 +36,34 @@ HRImplementationKey(kHRViewerViewControllerOpenNotification);
                                              selector:@selector(cangeFrameNotification:)
                                                  name:NSViewFrameDidChangeNotification
                                                object:self.outlineView];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(openExistingDocument:)
-                                                 name:kHRViewerViewControllerOpenNotification
-                                               object:nil];
+
+}
+
+#pragma mark - set get
+
+- (HRLogbook *)logbook {
+    if (self.logbookManger) {
+        return self.logbookManger.logboook;
+    }
+    return _logbook;
+}
+
+- (void)setLogbookManger:(HRLogbookManager *)logbookManger{
+    _logbookManger = logbookManger;
+    _logbookManger.delegate = self;
+    [self.outlineView reloadData];
+}
+
+- (void)setLogbook:(HRLogbook *)logbook {
+    _logbook = logbook;
+    [self.outlineView reloadData];
 }
 
 #pragma mark - action
-- (void)openExistingDocument:(id)sender {
-    NSOpenPanel* panel = [NSOpenPanel openPanel];
-    [panel beginWithCompletionHandler:^(NSInteger result){
-        if (result == NSFileHandlingPanelOKButton) {
-            NSURL*  theDoc = [[panel URLs] objectAtIndex:0];
-            NSData* data = [NSData dataWithContentsOfURL:theDoc];
-            self.loogbook = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        }
-    }];
-}
-
 - (void) cangeFrameNotification:(NSNotification*) notification{
     [self.outlineView reloadData];
 }
 
-- (void) setLoogbook:(HRLogbook *)loogbook{
-    _loogbook = loogbook;
-    [self.outlineView reloadData];
-}
 
 - (NSString*) stringFromDate:(NSDate*) date{
     return [date description];
@@ -77,12 +83,17 @@ HRImplementationKey(kHRViewerViewControllerOpenNotification);
     return rect.size.height + 2;
 }
 
+#pragma mark - HRLogbookManagerDelegate
+- (void) didAddedNewItemInLogbookManger:(HRLogbookManager*) manager{
+    [self.outlineView reloadData];
+}
+
 #pragma mark - NSOutlineViewDataSource;
 - (NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(HRLogItem*)item{
-    return !item ? self.loogbook.logItems.count : item.subitems.count;
+    return !item ? self.logbook.logItems.count : item.subitems.count;
 }
 - (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(HRLogItem*)item{
-    return !item ? self.loogbook.logItems[index] : item.subitems[index];
+    return !item ? self.logbook.logItems[index] : item.subitems[index];
 }
 
 - (BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(HRLogItem*)item{

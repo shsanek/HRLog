@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HRSocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HRLoger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3507FDE43A374CBC01DDB3CE585C397A</key>
+		<key>25A87ED2AF1AD5B17040D9794DEE4608</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A616C4E8838D53B43268F447205A8DD3</key>
+		<key>2C1EB04010195E30A52A351E62472010</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA60BF2A8F2A09DA4C42276D64F8C95E</key>
+		<key>5523AA5141B233C411880E779D79AAC6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55BCC00729AA4834F3CB73B03E5E1740</key>
 		<dict>
 			<key>primary</key>
 			<true/>

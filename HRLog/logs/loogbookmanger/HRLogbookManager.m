@@ -8,6 +8,7 @@
 //
 
 #import "HRLogbookManager.h"
+#import "HRClientLogbookManager.h"
 
 void HRLog(NSString* format,...) {
     va_list argumentList;
@@ -61,8 +62,11 @@ void HREndLog(){
     static HRLogbookManager * manger;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        
+#ifdef DEBUG
+        manger = [HRClientLogbookManager new];
+#else
         manger = [HRLogbookManager new];
+#endif
     });
     return manger;
 }
@@ -93,20 +97,26 @@ void HREndLog(){
 
 
 - (void) log:(HRLogItem*) log{
+    __weak typeof (self) weakSelf = self;
     dispatch_async([HRLogbookManager backgroundQueue], ^{
-        [self.logboook addLogItem:log];
+        [weakSelf.logboook addLogItem:log];
+        [weakSelf.delegate didAddedNewItemInLogbookManger:weakSelf];
     });
 }
 
 - (void) beginLog:(HRLogItem*) log{
+    __weak typeof (self) weakSelf = self;
     dispatch_async([HRLogbookManager backgroundQueue], ^{
-        [self.logboook addedNextLevelLogItem:log];
+        [weakSelf.logboook addedNextLevelLogItem:log];
+        [weakSelf.delegate didAddedNewItemInLogbookManger:weakSelf];
     });
 }
 
 - (void) endLog{
+    __weak typeof (self) weakSelf = self;
     dispatch_async([HRLogbookManager backgroundQueue], ^{
-        [self.logboook endLevel];
+        [weakSelf.logboook endLevel];
+        [weakSelf.delegate didAddedNewItemInLogbookManger:weakSelf];
     });
 }
 

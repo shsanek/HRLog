@@ -17,24 +17,28 @@ void HRBeginNameLog(NSString* name,NSString* format,...);
 void HREndLog();
 
 
+@class HRLogbookManager;
 
-@protocol HRLogbookManageDelegate <NSObject>
+@protocol HRLogbookManagerDelegate <NSObject>
 
-- (void) log:(HRLogItem*) log;
-- (void) beginLog:(HRLogItem*) log;
-- (void) endLog;
+- (void) didAddedNewItemInLogbookManger:(HRLogbookManager*) manager;
 
 @end
 
-@interface HRLogbookManager : NSObject<HRLogbookManageDelegate>
+@interface HRLogbookManager : NSObject
 
 + (HRLogbookManager*) sharedManager;
 + (dispatch_queue_t) backgroundQueue;
 
 @property (nonatomic,strong,readonly) HRLogbook* logboook;
+@property (nonatomic,weak) id<HRLogbookManagerDelegate> delegate;
 
 - (void) load;
 
 - (NSData*) dataFromCurrentlogbook;
+
+- (void) log:(HRLogItem*) log;
+- (void) beginLog:(HRLogItem*) log;
+- (void) endLog;
 
 @end

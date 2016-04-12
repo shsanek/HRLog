@@ -1,0 +1,1 @@
+../../../HRSocket/HRSocket/HRClientSocket.h

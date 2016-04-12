@@ -23,10 +23,11 @@
 
 @property (nonatomic,weak) id<HRSocketDelegate> delegate;
 @property (nonatomic,assign,readonly) int socket;
-@property (nonatomic,strong,readonly) HRQueue* queue;
+@property (nonatomic,strong,readonly) HRQueue* writeQueue;
+@property (nonatomic,strong,readonly) HRQueue* readQueue;
 
-- (instancetype) initWithSocket:(int) socket queue:(HRQueue*) queue;
-- (instancetype) initWithQueue:(HRQueue*) queue;
+- (instancetype) initWithSocket:(int) socket readQueue:(HRQueue*) readQueue writeQueue:(HRQueue*) writeQueue;
+- (instancetype) initWithReadQueue:(HRQueue*) readQueue writeQueue:(HRQueue*) writeQueue;
 
 - (void) sendData:(NSData*) data completionBloack:(void (^)(BOOL isFinish)) completionBloack;
 - (void) recivSoketCompletionBlock:(void (^)(NSData* data)) completionBlock;

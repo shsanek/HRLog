@@ -7,181 +7,228 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		046A075BA0BC234317B0561917532451 /* HRQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 753823E4A662CAF0AD79DB23703EAADE /* HRQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D1CAF5FDCC5B56FF9838DF77393E1E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		117A384E696F0DE54F89A5A6AB52F373 /* HRFileLogbookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A153A145D54177E625AC0F62AABE949 /* HRFileLogbookManager.m */; };
-		1431C33E4F49C6F9776C2C73283B1703 /* HRSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 7706A6830C8815921327C3BBCF795AE0 /* HRSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		155055CA963C993C955BB1F1920F8DF7 /* HRLogFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 060BDB47C02782FB9ABD59E83FC6C1DE /* HRLogFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17FD123B34F0571A436AAA37C7CB4963 /* HRGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = E9DBF7E33144856FD3D994088A64E307 /* HRGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19DF618380C9182E602D79259080F4EA /* HRQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A39EF12B4F83B29909F0F74E0E7FD25D /* HRQueue.m */; };
-		2819613B418BF0C161391BE1236A6551 /* HRSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB73A2027EFA5046D14D6F179EE8AEC /* HRSocket.m */; };
-		36FF364A7EEC6CE1CD4FCFB0C8C6C70C /* HRFileLogbookManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EEF54587B248F4EEE459F6617D3FA22 /* HRFileLogbookManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EC482C782F1952533C52AAA99C31204 /* HRClientLogbookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F08D4E59CBF67F78C2A2E81B81BE0421 /* HRClientLogbookManager.m */; };
-		636FB1E37FA9084942CC809475EDA649 /* HRServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFDE0C1ED365E9B834D72A1CD11933F /* HRServerSocket.m */; };
-		693253A70D22184EC6F0C5006CBEAA09 /* HRKeyDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD42BE32B486DDC4BC3D473BD2A752F /* HRKeyDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71AC2B5959F9E459DACD424B7B500A99 /* HRLogbook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A50812C17CE4BF2E3EB801E59C28999 /* HRLogbook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		732B153258DC0F2959C0FD16A0F7B326 /* HRImageLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EA66F633319B3001ECC3731A053C4AC8 /* HRImageLogItem.m */; };
-		75E588D07C9DF3E96CD643D63F6944BE /* HRLogbookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C4C94AC6EB0D9160E7898B0FB75E4C /* HRLogbookManager.m */; };
-		76ED439B7EFB824154E1693067FB53BC /* HRCodingSupprotDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = A45AEED26FB1B8457554DD499FE35A12 /* HRCodingSupprotDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		859DB7E79AA579407B3D02F35D08652C /* HRGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E59B1561800730A20B23B22290A14 /* HRGeometry.m */; };
-		9544F9A0C89298F0145A79B8513DDB67 /* HRFileLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 798ACF693005D2086E48D7EC52316341 /* HRFileLogItem.m */; };
-		9B4EE159EDF98B66EC1B01931C7BB441 /* Pods-HRLoger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4332CACBA455BDB071188891CA9C1291 /* Pods-HRLoger-dummy.m */; };
-		A0EA32DE55EA014D93C52CCDA80AE7B5 /* HRLogbookManagerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A4FF07089A9134B94F137C2018B2B1 /* HRLogbookManagerItem.m */; };
-		B91891DEA3EB261BEA1574CDE30AB7A4 /* HRLogbookManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CF69A421745B3613B70E0CB55035B9E /* HRLogbookManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF171DAAD07A629A47D9D17971DBEDA2 /* HRImageLogItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A113E9B9EAE3CC4220EBD65A060A4A39 /* HRImageLogItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C866504F08174FA2882ED9F75CA72DF8 /* HRClientSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C538DC889EE97969D920443C91995C4 /* HRClientSocket.m */; };
-		C8BB47F97138AD0757891FDEEB80065D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		CA35D6C42CB67D975DACA3D114D5193F /* Pods-HRLogerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3390950802BDD85C848845C7D23027B7 /* Pods-HRLogerTests-dummy.m */; };
-		D8CA93762199A2CEE5B89C95AC103B57 /* HRTextLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F3C20F3FA154DC2ED888DEE65D931B /* HRTextLogItem.m */; };
-		DCB2D9014825A148B90FFFCDB8B6C8B1 /* HRLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE79BAE551DF2880AE6875704AD0A8C /* HRLogItem.m */; };
-		E1CE8D91F2DD52BFA99E5F63D1BC5806 /* HRLogFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4779FAF0A90323823711827EFF401AAF /* HRLogFactory.m */; };
-		E6AC8E05B5535937F94959CDD1C53B65 /* HRClientSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D7556FC8E4D050E9B30E1AEE2046C07C /* HRClientSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E71FF655B3831EF5353988F7D510E331 /* HRTextLogItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E8595EC8D5C020FE3554828E94726A6A /* HRTextLogItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA5D4528B0B88032518AAA90D709DD8C /* HRAssertDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = B0EEBE7C6536D0262F5F7CC7C0D0B50C /* HRAssertDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EBF47E6D99A688537AFA5C416F3F87A9 /* HRLogbook.m in Sources */ = {isa = PBXBuildFile; fileRef = BB53DDD0C37D32487D8877D25D8929AE /* HRLogbook.m */; };
-		F136FC4D4B3C0D4E246AD99105C72464 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		F280CB8BF3CACFBC8FC02837C346DF2E /* HRFileLogItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D4107701615C8D9593862A8A95290C /* HRFileLogItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F43C6BC50A95D24AFF94F811C6A6F2FF /* HRLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8C06FA81A4B9B5D060D975A7EEC41A /* HRLog-dummy.m */; };
-		F49315B5FCA7D95961C1E7E21306A7B1 /* HRServerSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF5505E1A1A743030F3D7F79028676F /* HRServerSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F95B2988A08392B00CAF31B7148339E5 /* HRLogItem.h in Headers */ = {isa = PBXBuildFile; fileRef = FC070EE3D1A7A253695AC54EA08EF2FB /* HRLogItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9A8CFCC79EA03BAA416EBEF75F29762 /* HRClientLogbookManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE9D2BEEE91807B890B6659F2F1ED4F /* HRClientLogbookManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9F9E47BDCB48A9A1625B6E864272C6B /* HRLogbookManagerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1473D1CC83BDA2BB0886801551DC7BB2 /* HRLogbookManagerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		028579703851DFC77404A70A2C5281A8 /* Pods-HRLoger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4332CACBA455BDB071188891CA9C1291 /* Pods-HRLoger-dummy.m */; };
+		0B9DEF8E3D12978B925F8E260CDBB1DF /* HRLogbookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F18F7507346EB4CD472667A558C607 /* HRLogbookManager.m */; };
+		0D570EF12869F0CC20BF6E033970EB3A /* HRLogbook.m in Sources */ = {isa = PBXBuildFile; fileRef = E774D27229648782E1CE70958846BEF3 /* HRLogbook.m */; };
+		1609BC1E8ADBB25B2982F64341BD9FE2 /* HRFileLogbookManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD3D283C491A6032FD8C15C8AC1EF3D /* HRFileLogbookManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19974703372A086E44384C79E2B974CE /* HRClientLogbookManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E46D237E431DA30A01519115F158EC5 /* HRClientLogbookManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BC5CD7A8B1BC4C8179B824503215111 /* HRFileLogbookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D52613832B83E4268109A0F3BD94D54F /* HRFileLogbookManager.m */; };
+		273D749392522750B3EA8995555EB2C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		357C7A030D4F0BB3B3229DE222F517EC /* HRQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E707DAF651FD04B228FF64FF5B8592E1 /* HRQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		383AA1C4B5893A46C081D39084BCD392 /* HRServerSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF31E147EB0F5560C0A01BCA25C674 /* HRServerSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B00CD3658872EF0E83F3879BF4742D /* HRDeveloperLogerMangerKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BFD91DAC54B7698D57CA999036E244 /* HRDeveloperLogerMangerKey.m */; };
+		3A6ADB2EB6A7D1C5BAF18F07632FA1BA /* HRLogbookManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AFF2C40EA2A33A91F74CF8F07CADD56 /* HRLogbookManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B70EE652C44CB972BF5F860E1C5DC15 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		40DCE71407A1605539642C919EFDE13D /* HRLogbookManagerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE5B8CC7CA8B6F40785A918FA3CD68 /* HRLogbookManagerFactory.m */; };
+		42B8383ED4BAB552384785393B4C23A7 /* HRLogItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B2F0E2573541EF6F62ABB7A2B86B8A /* HRLogItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4366D4910A744741C0BE0AB08BCA7391 /* HRLogbookManagerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 69B248BA17C78647CA82D0A0E2207E09 /* HRLogbookManagerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D87B4917BE4D395C1F98B9CEADC93A2 /* HRLogbook.h in Headers */ = {isa = PBXBuildFile; fileRef = D80633ACCA42EC8B88C2089CFA737BD8 /* HRLogbook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B13F71DC5E6B4734D45CDA03F68440C /* HRGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = EB44E8129CB9CFE23538031B31864241 /* HRGeometry.m */; };
+		6234AB5BEAAD0AB83964FB4DF9849AB8 /* HRLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E53BD7211EEC864B44614FA2A93BD2C6 /* HRLogItem.m */; };
+		6417DF697372B6193F69694A4F1CBD0B /* HRSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD4E4BCAEFE665B7628F9AF3F42115 /* HRSocket-dummy.m */; };
+		669883350FA54ACF13DA41121211CF5F /* HRServerLogbookManger.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D753CFB2F44BBDEF0B564741C3186D /* HRServerLogbookManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69FC731A7B432BA115FAA19534BD9F1C /* HRServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7254A31695E6D42213D0194773CDC589 /* HRServerSocket.m */; };
+		6A43489649E98AC661798C46E47C8AEF /* HRTextLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863CE808955AC2E6F1C84959B5B6E93 /* HRTextLogItem.m */; };
+		6C794970EEFFA58A4BC56FA4B7C7ACE0 /* HRSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7EC3CEF14AE310975597948BE368D9 /* HRSocket.m */; };
+		74F873C1E5324A5D2A04B121A5EDB4C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		75D32BD17D123F4B0090C6D80AFD0682 /* HRTextLogItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 539E93C7878B122C60D3839ED199AA64 /* HRTextLogItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79E7929759BD436DE19E66C7434C83D4 /* HRDeveloperLogerMangerKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C73218AB0336EBDF7E8DEA1668349B /* HRDeveloperLogerMangerKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8074548B64EB6CB64D047BDDC9582668 /* Pods-HRLogerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3390950802BDD85C848845C7D23027B7 /* Pods-HRLogerTests-dummy.m */; };
+		867D2CF3786147D29302A9B3ED915DDA /* HRClientSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D96CA3E600B22CCB060F36BA2CBFEB4 /* HRClientSocket.m */; };
+		8F596E51E04399261345E599321C0A8A /* HRServerLogbookManger.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFC046CE5B0FE46052824E9190F0364 /* HRServerLogbookManger.m */; };
+		8FE90352976C3612785F6E409316FD14 /* HRLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB7F2950D08294D15E77DE81DF62F56 /* HRLog-dummy.m */; };
+		9AE55B00403870D52221CE616ABD4979 /* HRFileLogItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 828C6F731139AC86180D07063E00513B /* HRFileLogItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EEE7869EC2966F1476B910CF43A3E35 /* HRLogFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FB099D884A5C5A052260C8F62E4E8872 /* HRLogFactory.m */; };
+		A647D6F584FDB16CD83315EF2FE2E3B0 /* HRLogFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AEF0B3CC245E7C43B939D6D932FCACAB /* HRLogFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6BA6F68D49B9C47B6C475D5E6A2A7CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		AFC45EC3A2841088708DA8F49D6387CF /* HRImageLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D0B26B24AA25F55FBCD4C4CA06D23C /* HRImageLogItem.m */; };
+		B15294A95DC49058A20C76747738945D /* HRKeyDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 99741677D36DEB8436D28B85445BB8A9 /* HRKeyDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA11B36D0A1F36D22DCEDE9B9AE00556 /* HRSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8936CAE9E5E2755A691F496BE920B /* HRSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA67A285978D2B34815FDD85EE845C96 /* HRLogbookManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4025E597B75185811166D6F7DB2E0BFC /* HRLogbookManagerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBC16E354EEEEC4F8CA846F84C1BCB69 /* HRClientSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B4B3FC4E55070A71DD6C6908148F32 /* HRClientSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4DA5718DF017F1D4BB1CB47B4F713A3 /* HRLogbookManagerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBED5A7E8982BD05C2FAFDF12B50C40 /* HRLogbookManagerItem.m */; };
+		C893CA6A486ECFACD49059C1C9BF1396 /* HRClientLogbookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4594B979C77E956A6E5E262B996208 /* HRClientLogbookManager.m */; };
+		D1B48973F986D56434A355B17FBE4095 /* HRImageLogItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE541C45A366864BF53C01CCBFA76A0 /* HRImageLogItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D47785521544F7403D4CCABA20766438 /* HRFileLogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B222F7652DBA96ED4285D40958CD07 /* HRFileLogItem.m */; };
+		DAA53504877C03F2C75DDE7B1EC34DB6 /* HRCodingSupprotDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C83E2FD8B039914DF96EA2E8C8CB2B /* HRCodingSupprotDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAC106D207055D5187D6EEFC25500A05 /* HRAssertDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D9DB16E1869E3FE4F0C74B3A589185C3 /* HRAssertDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9224E7AFD2987B104D5B8C8FA2AB63 /* HRGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2855D0C156F73E6BF42E39D2C95B7BCB /* HRGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0F05CFC7176814F801C6324FE4C9420 /* HRQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3EE85FEA1F2E0B3829A4CBC4770518 /* HRQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CD8D33950273A8884ED35FF15114A451 /* PBXContainerItemProxy */ = {
+		8C281A7F1BBBBD3C902AF8281DB2FB19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A616C4E8838D53B43268F447205A8DD3;
+			remoteGlobalIDString = 5523AA5141B233C411880E779D79AAC6;
 			remoteInfo = HRLog;
 		};
-		F510912BB8FF0E78405BD1B3804C282F /* PBXContainerItemProxy */ = {
+		9511FE9DB48CD29B85CFD39BA49B200A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A616C4E8838D53B43268F447205A8DD3;
+			remoteGlobalIDString = 2C1EB04010195E30A52A351E62472010;
+			remoteInfo = HRSocket;
+		};
+		D84BA253753E02F5CABC50D963ACD774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C1EB04010195E30A52A351E62472010;
+			remoteInfo = HRSocket;
+		};
+		E7EAD87FADC5C80220A64C9A024AF0A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5523AA5141B233C411880E779D79AAC6;
 			remoteInfo = HRLog;
+		};
+		E9BCBD09AA45DC439300BC4AFC3B731D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C1EB04010195E30A52A351E62472010;
+			remoteInfo = HRSocket;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		060BDB47C02782FB9ABD59E83FC6C1DE /* HRLogFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogFactory.h; sourceTree = "<group>"; };
-		1473D1CC83BDA2BB0886801551DC7BB2 /* HRLogbookManagerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogbookManagerItem.h; sourceTree = "<group>"; };
-		1A153A145D54177E625AC0F62AABE949 /* HRFileLogbookManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRFileLogbookManager.m; sourceTree = "<group>"; };
-		1A50812C17CE4BF2E3EB801E59C28999 /* HRLogbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogbook.h; sourceTree = "<group>"; };
-		1BB73A2027EFA5046D14D6F179EE8AEC /* HRSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRSocket.m; sourceTree = "<group>"; };
+		00A7D84423AAFBC5C13FF402E7DFD247 /* libHRSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHRSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BFD91DAC54B7698D57CA999036E244 /* HRDeveloperLogerMangerKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRDeveloperLogerMangerKey.m; sourceTree = "<group>"; };
+		0BCAE68F7D66403978D35FE1BEB3AC32 /* HRSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HRSocket-prefix.pch"; sourceTree = "<group>"; };
 		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		20C83E2FD8B039914DF96EA2E8C8CB2B /* HRCodingSupprotDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRCodingSupprotDefine.h; sourceTree = "<group>"; };
 		25C8A5B6DC2BD030D11880F1230C619A /* Pods-HRLoger-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HRLoger-acknowledgements.plist"; sourceTree = "<group>"; };
-		29CE22E6EFBF28EF5EEB7543EB7F6363 /* libPods-HRLoger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRLoger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2855D0C156F73E6BF42E39D2C95B7BCB /* HRGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRGeometry.h; sourceTree = "<group>"; };
 		320CE31EB809A2605E5B59DE5EF71D92 /* Pods-HRLogerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HRLogerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		33833397761458C545A7F689E024FABE /* Pods-HRLoger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HRLoger.debug.xcconfig"; sourceTree = "<group>"; };
 		3390950802BDD85C848845C7D23027B7 /* Pods-HRLogerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HRLogerTests-dummy.m"; sourceTree = "<group>"; };
-		36D4107701615C8D9593862A8A95290C /* HRFileLogItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRFileLogItem.h; sourceTree = "<group>"; };
-		3C538DC889EE97969D920443C91995C4 /* HRClientSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRClientSocket.m; sourceTree = "<group>"; };
-		3CF69A421745B3613B70E0CB55035B9E /* HRLogbookManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogbookManager.h; sourceTree = "<group>"; };
+		36140DE73C1EF5936EC59E6208DEC8AC /* HRLog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HRLog.xcconfig; sourceTree = "<group>"; };
+		3D96CA3E600B22CCB060F36BA2CBFEB4 /* HRClientSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRClientSocket.m; path = HRSocket/HRClientSocket.m; sourceTree = "<group>"; };
+		4025E597B75185811166D6F7DB2E0BFC /* HRLogbookManagerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogbookManagerFactory.h; sourceTree = "<group>"; };
 		4332CACBA455BDB071188891CA9C1291 /* Pods-HRLoger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HRLoger-dummy.m"; sourceTree = "<group>"; };
-		464ED3965DC0EE80ACBC2F9CBFA71AE1 /* libPods-HRLogerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRLogerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4779FAF0A90323823711827EFF401AAF /* HRLogFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogFactory.m; sourceTree = "<group>"; };
 		4BAE4FC3BCD3165CAB5F6BC37DED9F99 /* Pods-HRLoger-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HRLoger-resources.sh"; sourceTree = "<group>"; };
-		4DFDE0C1ED365E9B834D72A1CD11933F /* HRServerSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRServerSocket.m; sourceTree = "<group>"; };
-		4F9E59B1561800730A20B23B22290A14 /* HRGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRGeometry.m; sourceTree = "<group>"; };
-		57678E793DA387CD1DFB629EA4964E4D /* HRLog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HRLog.xcconfig; sourceTree = "<group>"; };
-		5BF5505E1A1A743030F3D7F79028676F /* HRServerSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRServerSocket.h; sourceTree = "<group>"; };
-		5DD42BE32B486DDC4BC3D473BD2A752F /* HRKeyDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRKeyDefine.h; sourceTree = "<group>"; };
-		5EEF54587B248F4EEE459F6617D3FA22 /* HRFileLogbookManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRFileLogbookManager.h; sourceTree = "<group>"; };
-		6731E5931C725B74B39B9876A2514803 /* HRLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HRLog-prefix.pch"; sourceTree = "<group>"; };
-		753823E4A662CAF0AD79DB23703EAADE /* HRQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRQueue.h; sourceTree = "<group>"; };
-		7706A6830C8815921327C3BBCF795AE0 /* HRSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRSocket.h; sourceTree = "<group>"; };
-		798ACF693005D2086E48D7EC52316341 /* HRFileLogItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRFileLogItem.m; sourceTree = "<group>"; };
+		4BB7F2950D08294D15E77DE81DF62F56 /* HRLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HRLog-dummy.m"; sourceTree = "<group>"; };
+		539E93C7878B122C60D3839ED199AA64 /* HRTextLogItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRTextLogItem.h; sourceTree = "<group>"; };
+		55D0B26B24AA25F55FBCD4C4CA06D23C /* HRImageLogItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRImageLogItem.m; sourceTree = "<group>"; };
+		5AFF2C40EA2A33A91F74CF8F07CADD56 /* HRLogbookManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogbookManager.h; sourceTree = "<group>"; };
+		69B248BA17C78647CA82D0A0E2207E09 /* HRLogbookManagerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogbookManagerItem.h; sourceTree = "<group>"; };
+		6B4594B979C77E956A6E5E262B996208 /* HRClientLogbookManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRClientLogbookManager.m; sourceTree = "<group>"; };
+		6BD3D283C491A6032FD8C15C8AC1EF3D /* HRFileLogbookManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRFileLogbookManager.h; sourceTree = "<group>"; };
+		6E46D237E431DA30A01519115F158EC5 /* HRClientLogbookManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRClientLogbookManager.h; sourceTree = "<group>"; };
+		7254A31695E6D42213D0194773CDC589 /* HRServerSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRServerSocket.m; path = HRSocket/HRServerSocket.m; sourceTree = "<group>"; };
+		796D6B3AED25A97576D62143C30B98D5 /* HRLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HRLog-prefix.pch"; sourceTree = "<group>"; };
+		828C6F731139AC86180D07063E00513B /* HRFileLogItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRFileLogItem.h; sourceTree = "<group>"; };
+		8863CE808955AC2E6F1C84959B5B6E93 /* HRTextLogItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRTextLogItem.m; sourceTree = "<group>"; };
+		88BD4E4BCAEFE665B7628F9AF3F42115 /* HRSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HRSocket-dummy.m"; sourceTree = "<group>"; };
 		8D3B769AC60477A0D18E58D2ABD2E78A /* Pods-HRLogerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HRLogerTests-frameworks.sh"; sourceTree = "<group>"; };
-		94F3C20F3FA154DC2ED888DEE65D931B /* HRTextLogItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRTextLogItem.m; sourceTree = "<group>"; };
-		A113E9B9EAE3CC4220EBD65A060A4A39 /* HRImageLogItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRImageLogItem.h; sourceTree = "<group>"; };
-		A39EF12B4F83B29909F0F74E0E7FD25D /* HRQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRQueue.m; sourceTree = "<group>"; };
-		A45AEED26FB1B8457554DD499FE35A12 /* HRCodingSupprotDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRCodingSupprotDefine.h; sourceTree = "<group>"; };
+		8DE541C45A366864BF53C01CCBFA76A0 /* HRImageLogItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRImageLogItem.h; sourceTree = "<group>"; };
+		96C73218AB0336EBDF7E8DEA1668349B /* HRDeveloperLogerMangerKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRDeveloperLogerMangerKey.h; sourceTree = "<group>"; };
+		99741677D36DEB8436D28B85445BB8A9 /* HRKeyDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRKeyDefine.h; sourceTree = "<group>"; };
+		99CF31E147EB0F5560C0A01BCA25C674 /* HRServerSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRServerSocket.h; path = HRSocket/HRServerSocket.h; sourceTree = "<group>"; };
+		A8FE5B8CC7CA8B6F40785A918FA3CD68 /* HRLogbookManagerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogbookManagerFactory.m; sourceTree = "<group>"; };
 		A9E2FA676794905CEFF76F836C5DF9FB /* Pods-HRLoger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HRLoger.release.xcconfig"; sourceTree = "<group>"; };
-		AB8C06FA81A4B9B5D060D975A7EEC41A /* HRLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HRLog-dummy.m"; sourceTree = "<group>"; };
-		B0EEBE7C6536D0262F5F7CC7C0D0B50C /* HRAssertDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRAssertDefine.h; sourceTree = "<group>"; };
+		AEF0B3CC245E7C43B939D6D932FCACAB /* HRLogFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogFactory.h; sourceTree = "<group>"; };
+		B09F45B426A01A58D4AC4FAEC4362928 /* libHRLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHRLog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D753CFB2F44BBDEF0B564741C3186D /* HRServerLogbookManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRServerLogbookManger.h; sourceTree = "<group>"; };
 		B3391B79BD782B07E1C2FE2B5DBF7D10 /* Pods-HRLoger-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HRLoger-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB53DDD0C37D32487D8877D25D8929AE /* HRLogbook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogbook.m; sourceTree = "<group>"; };
-		BFD53D6826245ED5F1A4DBC45F296E54 /* libHRLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHRLog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF530CC914C76F4A3CCE7FA328D6B99 /* HRSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HRSocket.xcconfig; sourceTree = "<group>"; };
+		BC3EE85FEA1F2E0B3829A4CBC4770518 /* HRQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRQueue.m; path = HRSocket/HRQueue.m; sourceTree = "<group>"; };
 		C14614DF662DC474A0B58BBCE9856570 /* Pods-HRLogerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HRLogerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CDE9D2BEEE91807B890B6659F2F1ED4F /* HRClientLogbookManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRClientLogbookManager.h; sourceTree = "<group>"; };
-		D0A4FF07089A9134B94F137C2018B2B1 /* HRLogbookManagerItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogbookManagerItem.m; sourceTree = "<group>"; };
+		C7B222F7652DBA96ED4285D40958CD07 /* HRFileLogItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRFileLogItem.m; sourceTree = "<group>"; };
+		C8F4BC0B743198D5D15B89E9FF970CCA /* libPods-HRLogerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRLogerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B8936CAE9E5E2755A691F496BE920B /* HRSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRSocket.h; path = HRSocket/HRSocket.h; sourceTree = "<group>"; };
 		D43722EE306C516340056215A246E763 /* Pods-HRLoger-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HRLoger-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D6C4C94AC6EB0D9160E7898B0FB75E4C /* HRLogbookManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogbookManager.m; sourceTree = "<group>"; };
-		D7556FC8E4D050E9B30E1AEE2046C07C /* HRClientSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRClientSocket.h; sourceTree = "<group>"; };
-		E8595EC8D5C020FE3554828E94726A6A /* HRTextLogItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRTextLogItem.h; sourceTree = "<group>"; };
-		E9DBF7E33144856FD3D994088A64E307 /* HRGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRGeometry.h; sourceTree = "<group>"; };
-		EA66F633319B3001ECC3731A053C4AC8 /* HRImageLogItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRImageLogItem.m; sourceTree = "<group>"; };
-		EAE79BAE551DF2880AE6875704AD0A8C /* HRLogItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogItem.m; sourceTree = "<group>"; };
+		D52613832B83E4268109A0F3BD94D54F /* HRFileLogbookManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRFileLogbookManager.m; sourceTree = "<group>"; };
+		D5F18F7507346EB4CD472667A558C607 /* HRLogbookManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogbookManager.m; sourceTree = "<group>"; };
+		D7B4B3FC4E55070A71DD6C6908148F32 /* HRClientSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRClientSocket.h; path = HRSocket/HRClientSocket.h; sourceTree = "<group>"; };
+		D80633ACCA42EC8B88C2089CFA737BD8 /* HRLogbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogbook.h; sourceTree = "<group>"; };
+		D9DB16E1869E3FE4F0C74B3A589185C3 /* HRAssertDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRAssertDefine.h; sourceTree = "<group>"; };
+		DC7EC3CEF14AE310975597948BE368D9 /* HRSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRSocket.m; path = HRSocket/HRSocket.m; sourceTree = "<group>"; };
+		E1B2F0E2573541EF6F62ABB7A2B86B8A /* HRLogItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogItem.h; sourceTree = "<group>"; };
+		E53BD7211EEC864B44614FA2A93BD2C6 /* HRLogItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogItem.m; sourceTree = "<group>"; };
+		E707DAF651FD04B228FF64FF5B8592E1 /* HRQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRQueue.h; path = HRSocket/HRQueue.h; sourceTree = "<group>"; };
+		E774D27229648782E1CE70958846BEF3 /* HRLogbook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogbook.m; sourceTree = "<group>"; };
+		EB44E8129CB9CFE23538031B31864241 /* HRGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRGeometry.m; sourceTree = "<group>"; };
 		EB59CF0368E509A0ACF4EE447A538CF9 /* Pods-HRLogerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HRLogerTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBBED5A7E8982BD05C2FAFDF12B50C40 /* HRLogbookManagerItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogbookManagerItem.m; sourceTree = "<group>"; };
 		EE110EADDB6A24685607BAFC978B2D34 /* Pods-HRLogerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HRLogerTests-resources.sh"; sourceTree = "<group>"; };
-		F08D4E59CBF67F78C2A2E81B81BE0421 /* HRClientLogbookManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRClientLogbookManager.m; sourceTree = "<group>"; };
-		FC070EE3D1A7A253695AC54EA08EF2FB /* HRLogItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HRLogItem.h; sourceTree = "<group>"; };
+		EEFC046CE5B0FE46052824E9190F0364 /* HRServerLogbookManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRServerLogbookManger.m; sourceTree = "<group>"; };
+		FB099D884A5C5A052260C8F62E4E8872 /* HRLogFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HRLogFactory.m; sourceTree = "<group>"; };
+		FE15916BC7F67656BFC6317E05CDAC9E /* libPods-HRLoger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRLoger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE45EA1CB6E11DA3D9E8E95B9B050FCC /* Pods-HRLogerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HRLogerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A63CA37F7D83AF5ED86FFAD1D380E16 /* Frameworks */ = {
+		0613E7EA13D58B6DFD6B341B2B362347 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8BB47F97138AD0757891FDEEB80065D /* Cocoa.framework in Frameworks */,
+				3B70EE652C44CB972BF5F860E1C5DC15 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30FC6AC5E8A3F13B9027FD47F92B9B82 /* Frameworks */ = {
+		2F3710D2F66A8B8BC840324C45DCE6FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D1CAF5FDCC5B56FF9838DF77393E1E3 /* Cocoa.framework in Frameworks */,
+				A6BA6F68D49B9C47B6C475D5E6A2A7CE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8059FCEBE489A212F20BC6AC63180B41 /* Frameworks */ = {
+		3B086165D893C3D3A545F1BCB0B96033 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F136FC4D4B3C0D4E246AD99105C72464 /* Cocoa.framework in Frameworks */,
+				74F873C1E5324A5D2A04B121A5EDB4C4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739AE199FBBBCBBD5E7C12A83A37A47D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273D749392522750B3EA8995555EB2C6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17BCAF45E3BCBE4C122696A11229AC31 /* HRLog */ = {
+		1844604DC6670268BC7A6305717ABD7A /* loogbookmanger */ = {
 			isa = PBXGroup;
 			children = (
-				47F59ED6AE5659E010D0C53B6D4186FA /* HRLog */,
-				86D3CB2A37A3E20E8718500B5B643F26 /* Support Files */,
+				5AFF2C40EA2A33A91F74CF8F07CADD56 /* HRLogbookManager.h */,
+				D5F18F7507346EB4CD472667A558C607 /* HRLogbookManager.m */,
+				4025E597B75185811166D6F7DB2E0BFC /* HRLogbookManagerFactory.h */,
+				A8FE5B8CC7CA8B6F40785A918FA3CD68 /* HRLogbookManagerFactory.m */,
+				9482DE8939234B36FF499F119B5B8FCB /* item */,
+				4D654EF223D630DCD5D2DB1F52B7FF7F /* subclasses */,
 			);
-			name = HRLog;
-			path = ../..;
+			path = loogbookmanger;
 			sourceTree = "<group>";
 		};
-		1CFAF4C694F55662FA248F3283E0992D /* logs */ = {
+		21F9471041DA203DDC64D331705B5239 /* LogItems */ = {
 			isa = PBXGroup;
 			children = (
-				38BA865BBF5B7C1D99DB569F4426264D /* logbook */,
-				2A617F929137B15F20ACD3729FBB0967 /* LogItems */,
-				EE688DB6E6149D904B98EE86C9F8C303 /* loogbookmanger */,
+				E1B2F0E2573541EF6F62ABB7A2B86B8A /* HRLogItem.h */,
+				E53BD7211EEC864B44614FA2A93BD2C6 /* HRLogItem.m */,
+				69D45EBF1510091DCD27B3B4EC534936 /* FactoryLogs */,
+				FCB6527B2460DFA429F8474A64ADBB46 /* Item */,
 			);
-			path = logs;
+			path = LogItems;
 			sourceTree = "<group>";
 		};
-		1F06B6B62887068C58924C468EDAA9BF /* Item */ = {
+		26D2C42D2A8069A96FAF53E81224A31B /* Geometry */ = {
 			isa = PBXGroup;
 			children = (
-				36D4107701615C8D9593862A8A95290C /* HRFileLogItem.h */,
-				798ACF693005D2086E48D7EC52316341 /* HRFileLogItem.m */,
-				A113E9B9EAE3CC4220EBD65A060A4A39 /* HRImageLogItem.h */,
-				EA66F633319B3001ECC3731A053C4AC8 /* HRImageLogItem.m */,
-				E8595EC8D5C020FE3554828E94726A6A /* HRTextLogItem.h */,
-				94F3C20F3FA154DC2ED888DEE65D931B /* HRTextLogItem.m */,
+				2855D0C156F73E6BF42E39D2C95B7BCB /* HRGeometry.h */,
+				EB44E8129CB9CFE23538031B31864241 /* HRGeometry.m */,
 			);
-			path = Item;
+			path = Geometry;
 			sourceTree = "<group>";
 		};
 		28C17CEF104526ACA07B6EEE217EC43E /* OS X */ = {
@@ -192,24 +239,15 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		2A617F929137B15F20ACD3729FBB0967 /* LogItems */ = {
+		2B4356EE3EF4FA386A3464DFEA102A90 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FC070EE3D1A7A253695AC54EA08EF2FB /* HRLogItem.h */,
-				EAE79BAE551DF2880AE6875704AD0A8C /* HRLogItem.m */,
-				7132DB8CF5AE355ABA75562F9054619D /* FactoryLogs */,
-				1F06B6B62887068C58924C468EDAA9BF /* Item */,
+				36140DE73C1EF5936EC59E6208DEC8AC /* HRLog.xcconfig */,
+				4BB7F2950D08294D15E77DE81DF62F56 /* HRLog-dummy.m */,
+				796D6B3AED25A97576D62143C30B98D5 /* HRLog-prefix.pch */,
 			);
-			path = LogItems;
-			sourceTree = "<group>";
-		};
-		38BA865BBF5B7C1D99DB569F4426264D /* logbook */ = {
-			isa = PBXGroup;
-			children = (
-				1A50812C17CE4BF2E3EB801E59C28999 /* HRLogbook.h */,
-				BB53DDD0C37D32487D8877D25D8929AE /* HRLogbook.m */,
-			);
-			path = logbook;
+			name = "Support Files";
+			path = "HRLoger/Pods/Target Support Files/HRLog";
 			sourceTree = "<group>";
 		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
@@ -220,14 +258,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		47F59ED6AE5659E010D0C53B6D4186FA /* HRLog */ = {
+		4D654EF223D630DCD5D2DB1F52B7FF7F /* subclasses */ = {
 			isa = PBXGroup;
 			children = (
-				FCB9D7788F8F0848F9A416B71395BA59 /* hrsocket */,
-				1CFAF4C694F55662FA248F3283E0992D /* logs */,
-				7FF92B246C0CA7332C9BFFE3A98B04D8 /* support */,
+				6E46D237E431DA30A01519115F158EC5 /* HRClientLogbookManager.h */,
+				6B4594B979C77E956A6E5E262B996208 /* HRClientLogbookManager.m */,
+				96C73218AB0336EBDF7E8DEA1668349B /* HRDeveloperLogerMangerKey.h */,
+				06BFD91DAC54B7698D57CA999036E244 /* HRDeveloperLogerMangerKey.m */,
+				6BD3D283C491A6032FD8C15C8AC1EF3D /* HRFileLogbookManager.h */,
+				D52613832B83E4268109A0F3BD94D54F /* HRFileLogbookManager.m */,
+				B0D753CFB2F44BBDEF0B564741C3186D /* HRServerLogbookManger.h */,
+				EEFC046CE5B0FE46052824E9190F0364 /* HRServerLogbookManger.m */,
 			);
-			path = HRLog;
+			path = subclasses;
+			sourceTree = "<group>";
+		};
+		4DBF23591F8E4ABBA560F1A9C12171FC /* logs */ = {
+			isa = PBXGroup;
+			children = (
+				E4B30EA1D381C1793163F1BDECA42ED5 /* logbook */,
+				21F9471041DA203DDC64D331705B5239 /* LogItems */,
+				1844604DC6670268BC7A6305717ABD7A /* loogbookmanger */,
+			);
+			path = logs;
 			sourceTree = "<group>";
 		};
 		4FDC9302E24F0D7CED035CD2DAB53E24 /* Targets Support Files */ = {
@@ -239,13 +292,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5AB9ACBFD18DB753AEA8E63CB406CF0F /* Geometry */ = {
+		69D45EBF1510091DCD27B3B4EC534936 /* FactoryLogs */ = {
 			isa = PBXGroup;
 			children = (
-				E9DBF7E33144856FD3D994088A64E307 /* HRGeometry.h */,
-				4F9E59B1561800730A20B23B22290A14 /* HRGeometry.m */,
+				AEF0B3CC245E7C43B939D6D932FCACAB /* HRLogFactory.h */,
+				FB099D884A5C5A052260C8F62E4E8872 /* HRLogFactory.m */,
 			);
-			path = Geometry;
+			path = FactoryLogs;
+			sourceTree = "<group>";
+		};
+		701FDD86A8F86AF5EF6B05C3BB0D0929 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBF530CC914C76F4A3CCE7FA328D6B99 /* HRSocket.xcconfig */,
+				88BD4E4BCAEFE665B7628F9AF3F42115 /* HRSocket-dummy.m */,
+				0BCAE68F7D66403978D35FE1BEB3AC32 /* HRSocket-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HRSocket";
 			sourceTree = "<group>";
 		};
 		70BD377B68677D445BE8569EDC120136 /* Pods-HRLogerTests */ = {
@@ -263,71 +327,58 @@
 			path = "Target Support Files/Pods-HRLogerTests";
 			sourceTree = "<group>";
 		};
-		7132DB8CF5AE355ABA75562F9054619D /* FactoryLogs */ = {
-			isa = PBXGroup;
-			children = (
-				060BDB47C02782FB9ABD59E83FC6C1DE /* HRLogFactory.h */,
-				4779FAF0A90323823711827EFF401AAF /* HRLogFactory.m */,
-			);
-			path = FactoryLogs;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				C14E4FD788FF6ADF08C4793DD5EE0AD1 /* Development Pods */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				7E06A22E44B2EAEFFA809793D23E190E /* Products */,
+				D4CB51A2EDF2A4DADF730C913FC7270A /* Pods */,
+				A8014DD7913EFE9B2FFDAB1AC8882514 /* Products */,
 				4FDC9302E24F0D7CED035CD2DAB53E24 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7E06A22E44B2EAEFFA809793D23E190E /* Products */ = {
+		9482DE8939234B36FF499F119B5B8FCB /* item */ = {
 			isa = PBXGroup;
 			children = (
-				BFD53D6826245ED5F1A4DBC45F296E54 /* libHRLog.a */,
-				29CE22E6EFBF28EF5EEB7543EB7F6363 /* libPods-HRLoger.a */,
-				464ED3965DC0EE80ACBC2F9CBFA71AE1 /* libPods-HRLogerTests.a */,
+				69B248BA17C78647CA82D0A0E2207E09 /* HRLogbookManagerItem.h */,
+				EBBED5A7E8982BD05C2FAFDF12B50C40 /* HRLogbookManagerItem.m */,
+			);
+			path = item;
+			sourceTree = "<group>";
+		};
+		A8014DD7913EFE9B2FFDAB1AC8882514 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B09F45B426A01A58D4AC4FAEC4362928 /* libHRLog.a */,
+				00A7D84423AAFBC5C13FF402E7DFD247 /* libHRSocket.a */,
+				FE15916BC7F67656BFC6317E05CDAC9E /* libPods-HRLoger.a */,
+				C8F4BC0B743198D5D15B89E9FF970CCA /* libPods-HRLogerTests.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7FF92B246C0CA7332C9BFFE3A98B04D8 /* support */ = {
+		B96A92E35CC0819BCB3E7D8812721C34 /* HRSocket */ = {
 			isa = PBXGroup;
 			children = (
-				B0EEBE7C6536D0262F5F7CC7C0D0B50C /* HRAssertDefine.h */,
-				A45AEED26FB1B8457554DD499FE35A12 /* HRCodingSupprotDefine.h */,
-				5DD42BE32B486DDC4BC3D473BD2A752F /* HRKeyDefine.h */,
-				5AB9ACBFD18DB753AEA8E63CB406CF0F /* Geometry */,
+				D7B4B3FC4E55070A71DD6C6908148F32 /* HRClientSocket.h */,
+				3D96CA3E600B22CCB060F36BA2CBFEB4 /* HRClientSocket.m */,
+				E707DAF651FD04B228FF64FF5B8592E1 /* HRQueue.h */,
+				BC3EE85FEA1F2E0B3829A4CBC4770518 /* HRQueue.m */,
+				99CF31E147EB0F5560C0A01BCA25C674 /* HRServerSocket.h */,
+				7254A31695E6D42213D0194773CDC589 /* HRServerSocket.m */,
+				D3B8936CAE9E5E2755A691F496BE920B /* HRSocket.h */,
+				DC7EC3CEF14AE310975597948BE368D9 /* HRSocket.m */,
+				701FDD86A8F86AF5EF6B05C3BB0D0929 /* Support Files */,
 			);
-			path = support;
-			sourceTree = "<group>";
-		};
-		86D3CB2A37A3E20E8718500B5B643F26 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				57678E793DA387CD1DFB629EA4964E4D /* HRLog.xcconfig */,
-				AB8C06FA81A4B9B5D060D975A7EEC41A /* HRLog-dummy.m */,
-				6731E5931C725B74B39B9876A2514803 /* HRLog-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "HRLoger/Pods/Target Support Files/HRLog";
-			sourceTree = "<group>";
-		};
-		87A60BC38C0B8C66DD5BEC6D07832C80 /* item */ = {
-			isa = PBXGroup;
-			children = (
-				1473D1CC83BDA2BB0886801551DC7BB2 /* HRLogbookManagerItem.h */,
-				D0A4FF07089A9134B94F137C2018B2B1 /* HRLogbookManagerItem.m */,
-			);
-			path = item;
+			path = HRSocket;
 			sourceTree = "<group>";
 		};
 		C14E4FD788FF6ADF08C4793DD5EE0AD1 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				17BCAF45E3BCBE4C122696A11229AC31 /* HRLog */,
+				F55FCB129895B8A46F53A722189BAEA0 /* HRLog */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -347,123 +398,176 @@
 			path = "Target Support Files/Pods-HRLoger";
 			sourceTree = "<group>";
 		};
-		C9DAFA6F0FD44E8C3576F3532AB30E3E /* subclasses */ = {
+		D4CB51A2EDF2A4DADF730C913FC7270A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDE9D2BEEE91807B890B6659F2F1ED4F /* HRClientLogbookManager.h */,
-				F08D4E59CBF67F78C2A2E81B81BE0421 /* HRClientLogbookManager.m */,
-				5EEF54587B248F4EEE459F6617D3FA22 /* HRFileLogbookManager.h */,
-				1A153A145D54177E625AC0F62AABE949 /* HRFileLogbookManager.m */,
+				B96A92E35CC0819BCB3E7D8812721C34 /* HRSocket */,
 			);
-			path = subclasses;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		EE688DB6E6149D904B98EE86C9F8C303 /* loogbookmanger */ = {
+		D861ED5EFD7D70DC82070F9E10EEBD34 /* support */ = {
 			isa = PBXGroup;
 			children = (
-				3CF69A421745B3613B70E0CB55035B9E /* HRLogbookManager.h */,
-				D6C4C94AC6EB0D9160E7898B0FB75E4C /* HRLogbookManager.m */,
-				87A60BC38C0B8C66DD5BEC6D07832C80 /* item */,
-				C9DAFA6F0FD44E8C3576F3532AB30E3E /* subclasses */,
+				D9DB16E1869E3FE4F0C74B3A589185C3 /* HRAssertDefine.h */,
+				20C83E2FD8B039914DF96EA2E8C8CB2B /* HRCodingSupprotDefine.h */,
+				99741677D36DEB8436D28B85445BB8A9 /* HRKeyDefine.h */,
+				26D2C42D2A8069A96FAF53E81224A31B /* Geometry */,
 			);
-			path = loogbookmanger;
+			path = support;
 			sourceTree = "<group>";
 		};
-		FCB9D7788F8F0848F9A416B71395BA59 /* hrsocket */ = {
+		E2081015B7AF20E68FCC71A08B728411 /* HRLog */ = {
 			isa = PBXGroup;
 			children = (
-				D7556FC8E4D050E9B30E1AEE2046C07C /* HRClientSocket.h */,
-				3C538DC889EE97969D920443C91995C4 /* HRClientSocket.m */,
-				753823E4A662CAF0AD79DB23703EAADE /* HRQueue.h */,
-				A39EF12B4F83B29909F0F74E0E7FD25D /* HRQueue.m */,
-				5BF5505E1A1A743030F3D7F79028676F /* HRServerSocket.h */,
-				4DFDE0C1ED365E9B834D72A1CD11933F /* HRServerSocket.m */,
-				7706A6830C8815921327C3BBCF795AE0 /* HRSocket.h */,
-				1BB73A2027EFA5046D14D6F179EE8AEC /* HRSocket.m */,
+				4DBF23591F8E4ABBA560F1A9C12171FC /* logs */,
+				D861ED5EFD7D70DC82070F9E10EEBD34 /* support */,
 			);
-			path = hrsocket;
+			path = HRLog;
+			sourceTree = "<group>";
+		};
+		E4B30EA1D381C1793163F1BDECA42ED5 /* logbook */ = {
+			isa = PBXGroup;
+			children = (
+				D80633ACCA42EC8B88C2089CFA737BD8 /* HRLogbook.h */,
+				E774D27229648782E1CE70958846BEF3 /* HRLogbook.m */,
+			);
+			path = logbook;
+			sourceTree = "<group>";
+		};
+		F55FCB129895B8A46F53A722189BAEA0 /* HRLog */ = {
+			isa = PBXGroup;
+			children = (
+				E2081015B7AF20E68FCC71A08B728411 /* HRLog */,
+				2B4356EE3EF4FA386A3464DFEA102A90 /* Support Files */,
+			);
+			name = HRLog;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FCB6527B2460DFA429F8474A64ADBB46 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				828C6F731139AC86180D07063E00513B /* HRFileLogItem.h */,
+				C7B222F7652DBA96ED4285D40958CD07 /* HRFileLogItem.m */,
+				8DE541C45A366864BF53C01CCBFA76A0 /* HRImageLogItem.h */,
+				55D0B26B24AA25F55FBCD4C4CA06D23C /* HRImageLogItem.m */,
+				539E93C7878B122C60D3839ED199AA64 /* HRTextLogItem.h */,
+				8863CE808955AC2E6F1C84959B5B6E93 /* HRTextLogItem.m */,
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		145D8086E6FE6126587DAA5E428DA587 /* Headers */ = {
+		8AE9B134F42C45BB9B97C7DDA8DB6150 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5D4528B0B88032518AAA90D709DD8C /* HRAssertDefine.h in Headers */,
-				F9A8CFCC79EA03BAA416EBEF75F29762 /* HRClientLogbookManager.h in Headers */,
-				E6AC8E05B5535937F94959CDD1C53B65 /* HRClientSocket.h in Headers */,
-				76ED439B7EFB824154E1693067FB53BC /* HRCodingSupprotDefine.h in Headers */,
-				36FF364A7EEC6CE1CD4FCFB0C8C6C70C /* HRFileLogbookManager.h in Headers */,
-				F280CB8BF3CACFBC8FC02837C346DF2E /* HRFileLogItem.h in Headers */,
-				17FD123B34F0571A436AAA37C7CB4963 /* HRGeometry.h in Headers */,
-				BF171DAAD07A629A47D9D17971DBEDA2 /* HRImageLogItem.h in Headers */,
-				693253A70D22184EC6F0C5006CBEAA09 /* HRKeyDefine.h in Headers */,
-				71AC2B5959F9E459DACD424B7B500A99 /* HRLogbook.h in Headers */,
-				B91891DEA3EB261BEA1574CDE30AB7A4 /* HRLogbookManager.h in Headers */,
-				F9F9E47BDCB48A9A1625B6E864272C6B /* HRLogbookManagerItem.h in Headers */,
-				155055CA963C993C955BB1F1920F8DF7 /* HRLogFactory.h in Headers */,
-				F95B2988A08392B00CAF31B7148339E5 /* HRLogItem.h in Headers */,
-				046A075BA0BC234317B0561917532451 /* HRQueue.h in Headers */,
-				F49315B5FCA7D95961C1E7E21306A7B1 /* HRServerSocket.h in Headers */,
-				1431C33E4F49C6F9776C2C73283B1703 /* HRSocket.h in Headers */,
-				E71FF655B3831EF5353988F7D510E331 /* HRTextLogItem.h in Headers */,
+				BBC16E354EEEEC4F8CA846F84C1BCB69 /* HRClientSocket.h in Headers */,
+				357C7A030D4F0BB3B3229DE222F517EC /* HRQueue.h in Headers */,
+				383AA1C4B5893A46C081D39084BCD392 /* HRServerSocket.h in Headers */,
+				BA11B36D0A1F36D22DCEDE9B9AE00556 /* HRSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A656556886A0B64DD7C6AF9952708823 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC106D207055D5187D6EEFC25500A05 /* HRAssertDefine.h in Headers */,
+				19974703372A086E44384C79E2B974CE /* HRClientLogbookManager.h in Headers */,
+				DAA53504877C03F2C75DDE7B1EC34DB6 /* HRCodingSupprotDefine.h in Headers */,
+				79E7929759BD436DE19E66C7434C83D4 /* HRDeveloperLogerMangerKey.h in Headers */,
+				1609BC1E8ADBB25B2982F64341BD9FE2 /* HRFileLogbookManager.h in Headers */,
+				9AE55B00403870D52221CE616ABD4979 /* HRFileLogItem.h in Headers */,
+				EE9224E7AFD2987B104D5B8C8FA2AB63 /* HRGeometry.h in Headers */,
+				D1B48973F986D56434A355B17FBE4095 /* HRImageLogItem.h in Headers */,
+				B15294A95DC49058A20C76747738945D /* HRKeyDefine.h in Headers */,
+				4D87B4917BE4D395C1F98B9CEADC93A2 /* HRLogbook.h in Headers */,
+				3A6ADB2EB6A7D1C5BAF18F07632FA1BA /* HRLogbookManager.h in Headers */,
+				BA67A285978D2B34815FDD85EE845C96 /* HRLogbookManagerFactory.h in Headers */,
+				4366D4910A744741C0BE0AB08BCA7391 /* HRLogbookManagerItem.h in Headers */,
+				A647D6F584FDB16CD83315EF2FE2E3B0 /* HRLogFactory.h in Headers */,
+				42B8383ED4BAB552384785393B4C23A7 /* HRLogItem.h in Headers */,
+				669883350FA54ACF13DA41121211CF5F /* HRServerLogbookManger.h in Headers */,
+				75D32BD17D123F4B0090C6D80AFD0682 /* HRTextLogItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3507FDE43A374CBC01DDB3CE585C397A /* Pods-HRLogerTests */ = {
+		25A87ED2AF1AD5B17040D9794DEE4608 /* Pods-HRLogerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B463BFAA4603AD7C4FA89A9D998C0A0 /* Build configuration list for PBXNativeTarget "Pods-HRLogerTests" */;
+			buildConfigurationList = 564A841F4402FF1DBE6FE273F6180E98 /* Build configuration list for PBXNativeTarget "Pods-HRLogerTests" */;
 			buildPhases = (
-				48FC3040F7964570D379DF8F979162B7 /* Sources */,
-				8059FCEBE489A212F20BC6AC63180B41 /* Frameworks */,
+				5D8F3885F373B9D02D3FC7CE30213BD6 /* Sources */,
+				0613E7EA13D58B6DFD6B341B2B362347 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2261E2D763BE7834CDD49D3926303807 /* PBXTargetDependency */,
+				B5E0D0B77B2A3D7D6854074A1D703094 /* PBXTargetDependency */,
+				56BA96CBAE1FFCD15E36B4838C9829EA /* PBXTargetDependency */,
 			);
 			name = "Pods-HRLogerTests";
 			productName = "Pods-HRLogerTests";
-			productReference = 464ED3965DC0EE80ACBC2F9CBFA71AE1 /* libPods-HRLogerTests.a */;
+			productReference = C8F4BC0B743198D5D15B89E9FF970CCA /* libPods-HRLogerTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A616C4E8838D53B43268F447205A8DD3 /* HRLog */ = {
+		2C1EB04010195E30A52A351E62472010 /* HRSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 622A8C75052FB6C04D675EC059C6CEDA /* Build configuration list for PBXNativeTarget "HRLog" */;
+			buildConfigurationList = 0077878FD303DFFF5F0023C0ED02B791 /* Build configuration list for PBXNativeTarget "HRSocket" */;
 			buildPhases = (
-				FF3E6EB0745CA7DC64937A6B0E8A2481 /* Sources */,
-				2A63CA37F7D83AF5ED86FFAD1D380E16 /* Frameworks */,
-				145D8086E6FE6126587DAA5E428DA587 /* Headers */,
+				3988C8B15C5FE67C2A1EC10A82EAF607 /* Sources */,
+				739AE199FBBBCBBD5E7C12A83A37A47D /* Frameworks */,
+				8AE9B134F42C45BB9B97C7DDA8DB6150 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = HRSocket;
+			productName = HRSocket;
+			productReference = 00A7D84423AAFBC5C13FF402E7DFD247 /* libHRSocket.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5523AA5141B233C411880E779D79AAC6 /* HRLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2C130AEB732DE8F853DEC4BCA20D41 /* Build configuration list for PBXNativeTarget "HRLog" */;
+			buildPhases = (
+				3C6B9ED284685B924D7B88353CE14B43 /* Sources */,
+				3B086165D893C3D3A545F1BCB0B96033 /* Frameworks */,
+				A656556886A0B64DD7C6AF9952708823 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27FC29FCA4BCC79B896FE5A588667063 /* PBXTargetDependency */,
 			);
 			name = HRLog;
 			productName = HRLog;
-			productReference = BFD53D6826245ED5F1A4DBC45F296E54 /* libHRLog.a */;
+			productReference = B09F45B426A01A58D4AC4FAEC4362928 /* libHRLog.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		AA60BF2A8F2A09DA4C42276D64F8C95E /* Pods-HRLoger */ = {
+		55BCC00729AA4834F3CB73B03E5E1740 /* Pods-HRLoger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C588D9B4C6CF639A686D845248CE7BD9 /* Build configuration list for PBXNativeTarget "Pods-HRLoger" */;
+			buildConfigurationList = 1E009699A8778619F5A593FC23E9B9FD /* Build configuration list for PBXNativeTarget "Pods-HRLoger" */;
 			buildPhases = (
-				57E76812950D8B98251D62EE8252B28A /* Sources */,
-				30FC6AC5E8A3F13B9027FD47F92B9B82 /* Frameworks */,
+				754D8179FAA68BD6D43323246B406D05 /* Sources */,
+				2F3710D2F66A8B8BC840324C45DCE6FF /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				654CCF469661E81393FFCFCB3942D519 /* PBXTargetDependency */,
+				6191BD0230A74866C5D44ACCCCC98EA2 /* PBXTargetDependency */,
+				A18AD52DFD1702E67CF2460A1F23468D /* PBXTargetDependency */,
 			);
 			name = "Pods-HRLoger";
 			productName = "Pods-HRLoger";
-			productReference = 29CE22E6EFBF28EF5EEB7543EB7F6363 /* libPods-HRLoger.a */;
+			productReference = FE15916BC7F67656BFC6317E05CDAC9E /* libPods-HRLoger.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -483,75 +587,124 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7E06A22E44B2EAEFFA809793D23E190E /* Products */;
+			productRefGroup = A8014DD7913EFE9B2FFDAB1AC8882514 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A616C4E8838D53B43268F447205A8DD3 /* HRLog */,
-				AA60BF2A8F2A09DA4C42276D64F8C95E /* Pods-HRLoger */,
-				3507FDE43A374CBC01DDB3CE585C397A /* Pods-HRLogerTests */,
+				5523AA5141B233C411880E779D79AAC6 /* HRLog */,
+				2C1EB04010195E30A52A351E62472010 /* HRSocket */,
+				55BCC00729AA4834F3CB73B03E5E1740 /* Pods-HRLoger */,
+				25A87ED2AF1AD5B17040D9794DEE4608 /* Pods-HRLogerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		48FC3040F7964570D379DF8F979162B7 /* Sources */ = {
+		3988C8B15C5FE67C2A1EC10A82EAF607 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA35D6C42CB67D975DACA3D114D5193F /* Pods-HRLogerTests-dummy.m in Sources */,
+				867D2CF3786147D29302A9B3ED915DDA /* HRClientSocket.m in Sources */,
+				F0F05CFC7176814F801C6324FE4C9420 /* HRQueue.m in Sources */,
+				69FC731A7B432BA115FAA19534BD9F1C /* HRServerSocket.m in Sources */,
+				6417DF697372B6193F69694A4F1CBD0B /* HRSocket-dummy.m in Sources */,
+				6C794970EEFFA58A4BC56FA4B7C7ACE0 /* HRSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57E76812950D8B98251D62EE8252B28A /* Sources */ = {
+		3C6B9ED284685B924D7B88353CE14B43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4EE159EDF98B66EC1B01931C7BB441 /* Pods-HRLoger-dummy.m in Sources */,
+				C893CA6A486ECFACD49059C1C9BF1396 /* HRClientLogbookManager.m in Sources */,
+				38B00CD3658872EF0E83F3879BF4742D /* HRDeveloperLogerMangerKey.m in Sources */,
+				1BC5CD7A8B1BC4C8179B824503215111 /* HRFileLogbookManager.m in Sources */,
+				D47785521544F7403D4CCABA20766438 /* HRFileLogItem.m in Sources */,
+				5B13F71DC5E6B4734D45CDA03F68440C /* HRGeometry.m in Sources */,
+				AFC45EC3A2841088708DA8F49D6387CF /* HRImageLogItem.m in Sources */,
+				8FE90352976C3612785F6E409316FD14 /* HRLog-dummy.m in Sources */,
+				0D570EF12869F0CC20BF6E033970EB3A /* HRLogbook.m in Sources */,
+				0B9DEF8E3D12978B925F8E260CDBB1DF /* HRLogbookManager.m in Sources */,
+				40DCE71407A1605539642C919EFDE13D /* HRLogbookManagerFactory.m in Sources */,
+				C4DA5718DF017F1D4BB1CB47B4F713A3 /* HRLogbookManagerItem.m in Sources */,
+				9EEE7869EC2966F1476B910CF43A3E35 /* HRLogFactory.m in Sources */,
+				6234AB5BEAAD0AB83964FB4DF9849AB8 /* HRLogItem.m in Sources */,
+				8F596E51E04399261345E599321C0A8A /* HRServerLogbookManger.m in Sources */,
+				6A43489649E98AC661798C46E47C8AEF /* HRTextLogItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF3E6EB0745CA7DC64937A6B0E8A2481 /* Sources */ = {
+		5D8F3885F373B9D02D3FC7CE30213BD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EC482C782F1952533C52AAA99C31204 /* HRClientLogbookManager.m in Sources */,
-				C866504F08174FA2882ED9F75CA72DF8 /* HRClientSocket.m in Sources */,
-				117A384E696F0DE54F89A5A6AB52F373 /* HRFileLogbookManager.m in Sources */,
-				9544F9A0C89298F0145A79B8513DDB67 /* HRFileLogItem.m in Sources */,
-				859DB7E79AA579407B3D02F35D08652C /* HRGeometry.m in Sources */,
-				732B153258DC0F2959C0FD16A0F7B326 /* HRImageLogItem.m in Sources */,
-				F43C6BC50A95D24AFF94F811C6A6F2FF /* HRLog-dummy.m in Sources */,
-				EBF47E6D99A688537AFA5C416F3F87A9 /* HRLogbook.m in Sources */,
-				75E588D07C9DF3E96CD643D63F6944BE /* HRLogbookManager.m in Sources */,
-				A0EA32DE55EA014D93C52CCDA80AE7B5 /* HRLogbookManagerItem.m in Sources */,
-				E1CE8D91F2DD52BFA99E5F63D1BC5806 /* HRLogFactory.m in Sources */,
-				DCB2D9014825A148B90FFFCDB8B6C8B1 /* HRLogItem.m in Sources */,
-				19DF618380C9182E602D79259080F4EA /* HRQueue.m in Sources */,
-				636FB1E37FA9084942CC809475EDA649 /* HRServerSocket.m in Sources */,
-				2819613B418BF0C161391BE1236A6551 /* HRSocket.m in Sources */,
-				D8CA93762199A2CEE5B89C95AC103B57 /* HRTextLogItem.m in Sources */,
+				8074548B64EB6CB64D047BDDC9582668 /* Pods-HRLogerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754D8179FAA68BD6D43323246B406D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028579703851DFC77404A70A2C5281A8 /* Pods-HRLoger-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2261E2D763BE7834CDD49D3926303807 /* PBXTargetDependency */ = {
+		27FC29FCA4BCC79B896FE5A588667063 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = HRLog;
-			target = A616C4E8838D53B43268F447205A8DD3 /* HRLog */;
-			targetProxy = CD8D33950273A8884ED35FF15114A451 /* PBXContainerItemProxy */;
+			name = HRSocket;
+			target = 2C1EB04010195E30A52A351E62472010 /* HRSocket */;
+			targetProxy = D84BA253753E02F5CABC50D963ACD774 /* PBXContainerItemProxy */;
 		};
-		654CCF469661E81393FFCFCB3942D519 /* PBXTargetDependency */ = {
+		56BA96CBAE1FFCD15E36B4838C9829EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HRSocket;
+			target = 2C1EB04010195E30A52A351E62472010 /* HRSocket */;
+			targetProxy = 9511FE9DB48CD29B85CFD39BA49B200A /* PBXContainerItemProxy */;
+		};
+		6191BD0230A74866C5D44ACCCCC98EA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HRLog;
-			target = A616C4E8838D53B43268F447205A8DD3 /* HRLog */;
-			targetProxy = F510912BB8FF0E78405BD1B3804C282F /* PBXContainerItemProxy */;
+			target = 5523AA5141B233C411880E779D79AAC6 /* HRLog */;
+			targetProxy = 8C281A7F1BBBBD3C902AF8281DB2FB19 /* PBXContainerItemProxy */;
+		};
+		A18AD52DFD1702E67CF2460A1F23468D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HRSocket;
+			target = 2C1EB04010195E30A52A351E62472010 /* HRSocket */;
+			targetProxy = E9BCBD09AA45DC439300BC4AFC3B731D /* PBXContainerItemProxy */;
+		};
+		B5E0D0B77B2A3D7D6854074A1D703094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HRLog;
+			target = 5523AA5141B233C411880E779D79AAC6 /* HRLog */;
+			targetProxy = E7EAD87FADC5C80220A64C9A024AF0A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		039363468D3A80B61A033649321467EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB59CF0368E509A0ACF4EE447A538CF9 /* Pods-HRLogerTests.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		10B2EE21B5D67EE2C819831CCC43832B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -591,6 +744,61 @@
 			};
 			name = Debug;
 		};
+		1A188B345159B5ACA1242616D76B7C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320CE31EB809A2605E5B59DE5EF71D92 /* Pods-HRLogerTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5A231047D6EB7FB6E93BEE09475D3142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33833397761458C545A7F689E024FABE /* Pods-HRLoger.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		746636497BB5C8FC5B377A9AB35727CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E2FA676794905CEFF76F836C5DF9FB /* Pods-HRLoger.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		7C07D96CC7C445E83983A6C6420BC692 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -625,101 +833,9 @@
 			};
 			name = Release;
 		};
-		9A1E9EBFE136ECE0F6D1D1E540FFEDE1 /* Debug */ = {
+		A1F48D58B15B5A3B413338850BB06BC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57678E793DA387CD1DFB629EA4964E4D /* HRLog.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/HRLog/HRLog-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		A419B7F6B17D09CF1E63ED11DCD9AE17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB59CF0368E509A0ACF4EE447A538CF9 /* Pods-HRLogerTests.release.xcconfig */;
-			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		AA013BD1B85DD668D55E253B6A73EEDA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33833397761458C545A7F689E024FABE /* Pods-HRLoger.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		EF991D79CA3DBA43048F6CEA7AED2080 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9E2FA676794905CEFF76F836C5DF9FB /* Pods-HRLoger.release.xcconfig */;
-			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		F52C7FA69E25E7E45CAA81DF97FAAAF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 320CE31EB809A2605E5B59DE5EF71D92 /* Pods-HRLogerTests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F7DC1DFB4D8174DC4011D569C180A48F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57678E793DA387CD1DFB629EA4964E4D /* HRLog.xcconfig */;
+			baseConfigurationReference = 36140DE73C1EF5936EC59E6208DEC8AC /* HRLog.xcconfig */;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -735,15 +851,79 @@
 				SDKROOT = macosx;
 			};
 			name = Release;
+		};
+		AF762D557990BE9A5B3AA94860D781B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF530CC914C76F4A3CCE7FA328D6B99 /* HRSocket.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/HRSocket/HRSocket-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E914898887B85D4CE233B54EE1289A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF530CC914C76F4A3CCE7FA328D6B99 /* HRSocket.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/HRSocket/HRSocket-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EB5A07E2E48A96E2D4A1AF37A8081BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36140DE73C1EF5936EC59E6208DEC8AC /* HRLog.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/HRLog/HRLog-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B463BFAA4603AD7C4FA89A9D998C0A0 /* Build configuration list for PBXNativeTarget "Pods-HRLogerTests" */ = {
+		0077878FD303DFFF5F0023C0ED02B791 /* Build configuration list for PBXNativeTarget "HRSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F52C7FA69E25E7E45CAA81DF97FAAAF1 /* Debug */,
-				A419B7F6B17D09CF1E63ED11DCD9AE17 /* Release */,
+				AF762D557990BE9A5B3AA94860D781B9 /* Debug */,
+				E914898887B85D4CE233B54EE1289A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E009699A8778619F5A593FC23E9B9FD /* Build configuration list for PBXNativeTarget "Pods-HRLoger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A231047D6EB7FB6E93BEE09475D3142 /* Debug */,
+				746636497BB5C8FC5B377A9AB35727CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -757,20 +937,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		622A8C75052FB6C04D675EC059C6CEDA /* Build configuration list for PBXNativeTarget "HRLog" */ = {
+		3D2C130AEB732DE8F853DEC4BCA20D41 /* Build configuration list for PBXNativeTarget "HRLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A1E9EBFE136ECE0F6D1D1E540FFEDE1 /* Debug */,
-				F7DC1DFB4D8174DC4011D569C180A48F /* Release */,
+				EB5A07E2E48A96E2D4A1AF37A8081BEB /* Debug */,
+				A1F48D58B15B5A3B413338850BB06BC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C588D9B4C6CF639A686D845248CE7BD9 /* Build configuration list for PBXNativeTarget "Pods-HRLoger" */ = {
+		564A841F4402FF1DBE6FE273F6180E98 /* Build configuration list for PBXNativeTarget "Pods-HRLogerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA013BD1B85DD668D55E253B6A73EEDA /* Debug */,
-				EF991D79CA3DBA43048F6CEA7AED2080 /* Release */,
+				1A188B345159B5ACA1242616D76B7C0E /* Debug */,
+				039363468D3A80B61A033649321467EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,7 +6,7 @@
   },
   "version": "0.0.1",
   "summary": "HRLog pof for custom loger",
-  "description": "HRLog pod for cutom log and visual debuger and sending bag reports",
+  "description": "HRLog pod for custom log and visual debuger and sending bag reports",
   "license": "MIT",
   "authors": {
     "shsanek": "shipin@sibers.com"
@@ -20,5 +20,10 @@
     "HRLog/**/*.{h,m}"
   ],
   "public_header_files": "HRLog/**/*.h",
-  "homepage": "https://github.com/shsanek/HRLog"
+  "homepage": "https://github.com/shsanek/HRLog",
+  "dependencies": {
+    "HRSocket": [
+
+    ]
+  }
 }

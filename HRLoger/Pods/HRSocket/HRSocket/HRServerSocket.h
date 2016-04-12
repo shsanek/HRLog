@@ -12,6 +12,8 @@
 
 @property (nonatomic,strong,readonly) NSArray<HRSocket*>* sockets;
 
+- (HRSocket*) socketCreate:(int) socket readQueue:(HRQueue*) readQueue writeQueue:(HRQueue*) writeQueue;
+
 - (void) startServerWithPort:(NSInteger) port maxContent:(NSInteger) connetc;
 
 @end

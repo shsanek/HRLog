@@ -14,13 +14,46 @@
 @interface HRServerSocket ()<HRSocketDelegate>
 
 @property (nonatomic,strong,readonly) NSMutableArray<HRQueue*>* freeQueue;
-@property (nonatomic,strong,readonly) NSMutableDictionary<NSNumber*,HRQueue*>* lockQueue;
+@property (nonatomic,strong,readonly) NSMutableDictionary<NSNumber*,NSArray<HRQueue*>*>* lockQueue;
 @property (nonatomic,strong,readonly) NSMutableArray<HRSocket*>* clientSockets;
+@property (nonatomic,strong,readonly) HRQueue* listernQueue;
 @property (nonatomic,assign) BOOL isValid;
 
 @end
 
 @implementation HRServerSocket
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self serverLoad];
+    }
+    return self;
+}
+
+- (instancetype)initWithReadQueue:(HRQueue *)readQueue writeQueue:(HRQueue *)writeQueue{
+    self = [super initWithReadQueue:readQueue writeQueue:writeQueue];
+    if (self) {
+        [self serverLoad];
+    }
+    return self;
+}
+
+- (instancetype)initWithSocket:(int)socket readQueue:(HRQueue *)readQueue writeQueue:(HRQueue *)writeQueue{
+    self = [super initWithSocket:socket readQueue:readQueue writeQueue:writeQueue];
+    if (self) {
+        [self serverLoad];
+    }
+    return self;
+}
+
+- (void) serverLoad{
+    NSString* identifier = [NSString stringWithFormat:@"queue%@",[HRServerSocket nextIndex]];
+    _listernQueue = [[HRQueue alloc] initWithQueue:dispatch_queue_create([identifier UTF8String], NULL)];
+    _freeQueue = [NSMutableArray new];
+    _clientSockets = [NSMutableArray new];
+    _lockQueue = [NSMutableDictionary new];
+}
 
 + (NSString*) nextIndex{
     static NSUInteger index;
@@ -39,55 +72,75 @@
 
 - (void) addedSocket:(int) socketNumber{
     __block HRSocket* socket = nil;
-    __block HRQueue* queue = nil;
+    __block HRQueue* readQueue = nil;
+    __block HRQueue* writeQueue = nil;
     __weak typeof(self) weakSelf = self;
     if (weakSelf.freeQueue.count) {
-        queue = weakSelf.freeQueue.lastObject;
+        readQueue = weakSelf.freeQueue.lastObject;
         [weakSelf.freeQueue removeLastObject];
     } else{
-        queue = [[HRQueue alloc] initWithQueue:dispatch_queue_create([HRServerSocket nextIndex].UTF8String, NULL)];
+        readQueue = [[HRQueue alloc] initWithQueue:dispatch_queue_create([HRServerSocket nextIndex].UTF8String, NULL)];
     }
-    [weakSelf.lockQueue setObject:queue forKey:@(socketNumber)];
-    socket = [[HRSocket alloc] initWithSocket:socketNumber queue:queue];
+    if (weakSelf.freeQueue.count) {
+        writeQueue = weakSelf.freeQueue.lastObject;
+        [weakSelf.freeQueue removeLastObject];
+    } else{
+        writeQueue = [[HRQueue alloc] initWithQueue:dispatch_queue_create([HRServerSocket nextIndex].UTF8String, NULL)];
+    }
+    [weakSelf.lockQueue setObject:@[writeQueue,readQueue] forKey:@(socketNumber)];
+    socket = [self socketCreate:socketNumber readQueue:readQueue writeQueue:writeQueue];
     [weakSelf.clientSockets addObject:socket];
     
     socket.delegate = self;
     [self.delegate contentSocket:socket];
-    [self loopInQueue:queue socket:socket];
+    [self loopSocket:socket];
 }
 
-- (void) loopInQueue:(HRQueue*) queue socket:(HRSocket*) socket{
+- (HRSocket*) socketCreate:(int) socket readQueue:(HRQueue*) readQueue writeQueue:(HRQueue*) writeQueue{
+    return [[HRSocket alloc] initWithSocket:socket readQueue:readQueue writeQueue:writeQueue];
+}
+
+- (void) loopSocket:(HRSocket*) socket{
     __block BOOL isData;
-    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    __weak typeof(self) weakSelf = self;
     [socket recivSoketCompletionBlock:^(NSData *data) {
         isData = !!data;
-        dispatch_semaphore_signal(semaphore);
+        if (isData) {
+            [weakSelf endSocket:socket];
+        } else {
+            [weakSelf.readQueue async:^{
+                [weakSelf loopSocket:socket];
+            }];
+        }
     }];
-    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-    if (isData) {
-        [self endSocket:socket];
-    } else {
-        [self loopInQueue:queue socket:socket];
-    }
 }
 
 - (void) endSocket:(HRSocket*) socket{
     [self.delegate discontentSocket:socket];
-    [self.queue sync:^{
-        HRQueue* queue = self.lockQueue[@(socket.socket)];
-        [self.lockQueue removeObjectForKey:@(socket.socket)];
-        [self.freeQueue addObject:queue];
-        [self.clientSockets removeObject:socket];
+    __weak typeof(self) weakSelf = self;
+    [self.readQueue sync:^{
+        HRQueue* queue = self.lockQueue[@(socket.socket)][0];
+        [weakSelf.freeQueue addObject:queue];
+        queue = weakSelf.lockQueue[@(socket.socket)][1];
+        [weakSelf.freeQueue addObject:queue];
+        [weakSelf.lockQueue removeObjectForKey:@(socket.socket)];
+        [weakSelf.freeQueue addObject:queue];
+        [weakSelf.clientSockets removeObject:socket];
     }];
 }
 
 - (void) loopListen{
-    [self.queue async:^{
-        int sock = accept(self.socket, NULL, NULL);
+    __weak typeof(self) weakSelf = self;
+    [self.listernQueue async:^{
+        int sock = accept(weakSelf.socket, NULL, NULL);
         if(sock < 0){
             NSLog(@"warning:socket identifier < 0");
+            return;
         }
-        [self addedSocket:sock];
+        [weakSelf.readQueue sync:^{
+            [weakSelf addedSocket:sock];
+        }];
+        [weakSelf loopListen];
     }];
 }
 
@@ -108,7 +161,7 @@
         }
         return;
     }
-    [self.queue async:^{
+    [self.writeQueue async:^{
         __block BOOL isData = YES;
         dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
         int k = 0;

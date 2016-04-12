@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.source_files  = "HRLog", "HRLog/**/*.{h,m}"
   s.public_header_files = "HRLog/**/*.h"
   s.homepage = "https://github.com/shsanek/HRLog";
-
+  s.dependency 'HRSocket'
 end

@@ -9,13 +9,15 @@
 #import <Cocoa/Cocoa.h>
 #import "HRKeyDefine.h"
 
+@class HRLogbookManager;
 @class HRLogbook;
 
 HRIntefaceKey(kHRViewerViewControllerOpenNotification);
 
 @interface HRViewerViewController : NSViewController
 
-@property (nonatomic,strong) HRLogbook* loogbook;
+@property (nonatomic,strong) HRLogbook* logbook;
+@property (nonatomic,strong) HRLogbookManager* logbookManger;
 
 @end
 

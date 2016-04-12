@@ -18,37 +18,40 @@
         if (_socket < 0) {
             NSLog( @"not create socket");
         }
-        _queue = [[HRQueue alloc] initWithQueue:dispatch_get_main_queue()];
+        _readQueue = [[HRQueue alloc] initWithQueue:dispatch_get_main_queue()];
+        _writeQueue = _readQueue;
     }
     return self;
 }
 
-- (instancetype) initWithQueue:(HRQueue *)queue {
+- (instancetype) initWithReadQueue:(HRQueue *)readQueue writeQueue:(HRQueue *)writeQueue{
     self = [super init];
     if (self) {
         _socket = socket(AF_INET, SOCK_STREAM, 0);
         if (_socket < 0) {
             NSLog( @"not create socket");
         }
-        _queue = queue;
+        _readQueue = readQueue;
+        _writeQueue = writeQueue;
     }
     return self;
 }
 
-- (instancetype) initWithSocket:(int) socket queue:(HRQueue *)queue{
+- (instancetype) initWithSocket:(int) socket readQueue:(HRQueue *)readQueue writeQueue:(HRQueue *)writeQueue{
     self = [super init];
     if (self) {
         _socket = socket;
         if (_socket < 0) {
             NSLog( @"not create socket");
         }
-        _queue = queue;
+        _readQueue = readQueue;
+        _writeQueue = writeQueue;
     }
     return self;
 }
 
 - (void)recivSoketCompletionBlock:(void (^)(NSData *))completionBlock{
-    [self.queue async:^{
+    [self.readQueue async:^{
         [self syncRecivSoketCompletionBlock:completionBlock];
     }];
 }
@@ -117,7 +120,7 @@
 }
 
 - (void)sendData:(NSData *)data completionBloack:(void (^)(BOOL))completionBloack{
-    [self.queue async:^{
+    [self.writeQueue async:^{
         NSUInteger total = 0;
         char* buf = (char*)data.bytes;
         UInt32 len = (UInt32)data.length;
