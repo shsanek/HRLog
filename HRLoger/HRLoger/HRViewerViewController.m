@@ -13,6 +13,7 @@ HRImplementationKey(kHRViewerViewControllerOpenNotification);
 
 @interface HRViewerViewController ()<NSOutlineViewDataSource,NSOutlineViewDelegate,HRLogbookManagerDelegate>
 
+@property (nonatomic,strong) IBOutlet NSScrollView* scrollView;
 @property (nonatomic,strong) IBOutlet NSOutlineView* outlineView;
 @property (nonatomic,strong) IBOutlet NSTableColumn* dateColumn;
 @property (nonatomic,strong) IBOutlet NSTableColumn* nameColumn;
@@ -85,7 +86,13 @@ HRImplementationKey(kHRViewerViewControllerOpenNotification);
 
 #pragma mark - HRLogbookManagerDelegate
 - (void) didAddedNewItemInLogbookManger:(HRLogbookManager*) manager{
-    [self.outlineView reloadData];
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        [self.outlineView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.scrollView.documentView scrollPoint:NSMakePoint(0,
+                                                                  [self.scrollView.documentView frame].size.height + 1000)];
+        });
+    });
 }
 
 #pragma mark - NSOutlineViewDataSource;

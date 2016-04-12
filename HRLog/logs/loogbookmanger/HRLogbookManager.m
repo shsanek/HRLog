@@ -9,6 +9,7 @@
 
 #import "HRLogbookManager.h"
 #import "HRClientLogbookManager.h"
+#import "HRLogFactory.h"
 
 void HRLog(NSString* format,...) {
     va_list argumentList;
@@ -53,6 +54,22 @@ void HREndLog(){
     [[HRLogbookManager sharedManager] endLog];
 }
 
+void HRObjectLog(id object){
+    NSLog(@"%@",[object dictionary]);
+    HRLogItem* item = [HRLogFactory logItemFromObject:object];
+    [[HRLogbookManager sharedManager] log:item];
+}
+
+void HRNameObjectLog(NSString* name,id object){
+    NSLog(@"%@",[object dictionary]);
+    HRLogItem* item = [HRLogFactory logItemFromObject:object];
+    item.name = name;
+    [[HRLogbookManager sharedManager] log:item];
+}
+
+void HRAddLog(HRLogItem* logItem){
+    [[HRLogbookManager sharedManager] log:logItem];
+}
 
 
 

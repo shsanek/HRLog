@@ -229,6 +229,7 @@
                         <outlet property="descriptionColumn" destination="Wsd-oc-PCv" id="VH9-Po-evN"/>
                         <outlet property="nameColumn" destination="dO5-Ht-Mbc" id="xwg-b7-UGH"/>
                         <outlet property="outlineView" destination="edZ-Rt-GmB" id="Oj5-SD-nIg"/>
+                        <outlet property="scrollView" destination="MSU-Tq-goY" id="Rve-GN-BJb"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

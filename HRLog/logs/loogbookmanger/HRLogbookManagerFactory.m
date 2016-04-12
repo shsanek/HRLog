@@ -38,7 +38,8 @@
 }
 
 - (void) runServerWithDelegate:(id<HRLogbookManagerFactoryDelegate>) delegate{
-    NSAssert(!self.serverSocket, @"server is already running");
+    [self.serverSocket close];
+    _logbookMangers = [NSMutableDictionary new];
     HRQueue * outQ = [[HRQueue alloc] initWithQueue:dispatch_queue_create("HRClientLogbookManager.serverout", NULL)];
     HRQueue * inQ = [[HRQueue alloc] initWithQueue:dispatch_queue_create("HRClientLogbookManager.serverin", NULL)];
     HRServerSocket* serverSocket = [[HRServerSocket alloc] initWithReadQueue:outQ
@@ -46,6 +47,11 @@
     serverSocket.delegate = self;
     [serverSocket startServerWithPort:kHRLogerDeveloperServerPort maxContent:10];
     _serverSocket = serverSocket;
+    _delegate = delegate;
+}
+
+- (void)stopServer {
+    [self.serverSocket close];
 }
 
 #pragma mark - HRSocketDelegate

@@ -25,6 +25,6 @@
 @property (nonatomic,weak,readonly) id<HRLogbookManagerFactoryDelegate> delegate;
 
 - (void) runServerWithDelegate:(id<HRLogbookManagerFactoryDelegate>) delegate;
-
+- (void) stopServer;
 
 @end

@@ -27,7 +27,7 @@
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+    [[HRLogbookManagerFactory sharedFactory] stopServer];
 }
 
 #pragma mark - notification
@@ -46,8 +46,10 @@
 #pragma mark - HRLogbookManagerFactoryDelegate
 - (void)logbookManagerFactory:(HRLogbookManagerFactory *)factory
             newLogbookManager:(HRLogbookManager *)logbookManager{
-    HRViewerViewController* viewController = [self newWindow];
-    viewController.logbookManger = logbookManager;
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        HRViewerViewController* viewController = [self newWindow];
+        viewController.logbookManger = logbookManager;
+    });
 }
 
 #pragma mark - new window

@@ -28,6 +28,9 @@
         if (ip.length == 0) {
             ip = nil;
         }
+#if TARGET_IPHONE_SIMULATOR
+        ip = nil;
+#endif
         [clientSocket connectIP:ip port:kHRLogerDeveloperServerPort];
         _clientSocket = clientSocket;
     }

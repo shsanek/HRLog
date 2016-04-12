@@ -15,6 +15,9 @@ void HRNameLog(NSString* name,NSString* format,...);
 void HRBeginLog(NSString* format,...);
 void HRBeginNameLog(NSString* name,NSString* format,...);
 void HREndLog();
+void HRObjectLog(id object);
+void HRNameObjectLog(NSString* name,id object);
+void HRAddLog(HRLogItem* logItem);
 
 
 @class HRLogbookManager;
