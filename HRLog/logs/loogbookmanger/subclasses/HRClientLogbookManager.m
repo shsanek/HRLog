@@ -41,7 +41,7 @@
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:@{kHRLogerDeveloperLogKey:log}];
     [self.clientSocket sendData:data completionBloack:^(BOOL isFinish) {
         if (isFinish) {
-            NSLog(@"error sent log data");
+           // NSLog(@"error sent log data");
         }
     }];
 }
@@ -50,7 +50,7 @@
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:@{kHRLogerDeveloperBeginLogKey:log}];
     [self.clientSocket sendData:data completionBloack:^(BOOL isFinish) {
         if (isFinish) {
-            NSLog(@"error sent log data");
+          //  NSLog(@"error sent log data");
         }
     }];
 }
@@ -59,7 +59,7 @@
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:@{kHRLogerDeveloperEndLogKey:@""}];
     [self.clientSocket sendData:data completionBloack:^(BOOL isFinish) {
         if (isFinish) {
-            NSLog(@"error sent log data");
+           // NSLog(@"error sent log data");
         }
     }];
 }
