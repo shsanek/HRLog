@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E8ECAC551C8AD53000945EC2"
+               BlueprintIdentifier = "E88BA70D1E5C15E10035F16A"
                BuildableName = "HRLoger.app"
                BlueprintName = "HRLoger"
                ReferencedContainer = "container:HRLoger.xcodeproj">
@@ -28,21 +28,11 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E8ECAC6E1C8AD53000945EC2"
-               BuildableName = "HRLogerTests.xctest"
-               BlueprintName = "HRLogerTests"
-               ReferencedContainer = "container:HRLoger.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8ECAC551C8AD53000945EC2"
+            BlueprintIdentifier = "E88BA70D1E5C15E10035F16A"
             BuildableName = "HRLoger.app"
             BlueprintName = "HRLoger"
             ReferencedContainer = "container:HRLoger.xcodeproj">
@@ -65,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8ECAC551C8AD53000945EC2"
+            BlueprintIdentifier = "E88BA70D1E5C15E10035F16A"
             BuildableName = "HRLoger.app"
             BlueprintName = "HRLoger"
             ReferencedContainer = "container:HRLoger.xcodeproj">
@@ -84,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8ECAC551C8AD53000945EC2"
+            BlueprintIdentifier = "E88BA70D1E5C15E10035F16A"
             BuildableName = "HRLoger.app"
             BlueprintName = "HRLoger"
             ReferencedContainer = "container:HRLoger.xcodeproj">

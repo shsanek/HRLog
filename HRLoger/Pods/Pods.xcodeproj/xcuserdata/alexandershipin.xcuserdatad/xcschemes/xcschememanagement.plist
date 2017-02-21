@@ -14,25 +14,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HRLogerTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3507FDE43A374CBC01DDB3CE585C397A</key>
+		<key>5822DFEEB94B9DB33AEAE133E2693F25</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A616C4E8838D53B43268F447205A8DD3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AA60BF2A8F2A09DA4C42276D64F8C95E</key>
+		<key>8CA914C84585CF266F2F6D75E61DB1F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

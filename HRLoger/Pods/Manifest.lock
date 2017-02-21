@@ -1,5 +1,5 @@
 PODS:
-  - HRLog (0.0.1)
+  - HRLog (0.1.0)
 
 DEPENDENCIES:
   - HRLog (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HRLog: 4a9e31f6f829ac14135953cf94a7f9845b62b930
+  HRLog: 959875cdf021a94c69ebffe662daabd888e6b3de
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 66029e5d70bbc74eba6a58b44523135e2370e72c
+
+COCOAPODS: 1.2.0.beta.1
