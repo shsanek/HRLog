@@ -1,1 +1,0 @@
-../../../../../HRLog/logs/loogbookmanger/item/HRLogbookManagerItem.h

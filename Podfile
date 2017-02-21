@@ -6,3 +6,8 @@
 target 'HRLoger' do
 	pod 'HRLog', :path => '../'
 end
+
+target 'HRLogerTests' do
+	pod 'HRLog', :path => '../'
+end
+

@@ -1,71 +1,57 @@
 //
 //  AppDelegate.m
-//  HRLogViewer
+//  HRLoger
 //
-//  Created by Alexander Shipin on 24/02/16.
-//  Copyright © 2016 Alexander Shipin. All rights reserved.
+//  Created by Alexander Shipin on 21/02/2017.
+//  Copyright © 2017 hr. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "HRViewerViewController.h"
-#import <HRLogbookManagerFactory.h>
 
-@interface AppDelegate ()<HRLogbookManagerFactoryDelegate>
-
-@property (nonatomic,strong) NSMutableArray* logerWindows;
+#import <HRLogViewController.h>
+#import <HRLoger.h>
+@interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    [[HRLogbookManagerFactory sharedFactory] runServerWithDelegate:self];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(openExistingDocument:)
-                                                 name:kHRViewerViewControllerOpenNotification
-                                               object:nil];
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[HRLoger loger] startSesstion];
+    [HRLoger loger].notAddDateInLog = YES;
+    [HRLoger loger].startSymbol = @">";
+    [HRLogViewController setAppName:@"TestApp" withEmail:@"example@gmail.com"];
+    [HRLogViewController addGestureShowInWindow:self.window];
+    return YES;
 }
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    [[HRLogbookManagerFactory sharedFactory] stopServer];
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
-#pragma mark - notification
-- (void)openExistingDocument:(id)sender {
-    NSOpenPanel* panel = [NSOpenPanel openPanel];
-    [panel beginWithCompletionHandler:^(NSInteger result){
-        if (result == NSFileHandlingPanelOKButton) {
-            NSURL*  theDoc = [[panel URLs] objectAtIndex:0];
-            NSData* data = [NSData dataWithContentsOfURL:theDoc];
-            HRViewerViewController* viewController = [self newWindow];
-            viewController.logbook = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        }
-    }];
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
-#pragma mark - HRLogbookManagerFactoryDelegate
-- (void)logbookManagerFactory:(HRLogbookManagerFactory *)factory
-            newLogbookManager:(HRLogbookManager *)logbookManager{
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        HRViewerViewController* viewController = [self newWindow];
-        viewController.logbookManger = logbookManager;
-    });
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
 }
 
-#pragma mark - new window
-- (NSMutableArray *)logerWindows{
-    if (!_logerWindows) {
-        _logerWindows = [NSMutableArray new];
-    }
-    return _logerWindows;
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
-- (HRViewerViewController*) newWindow{
-    NSStoryboard* storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
-    NSWindowController* windoController = storyboard.instantiateInitialController;
-    [self.logerWindows addObject:windoController];
-    [windoController showWindow:self];
-    return (id)windoController.window.contentViewController;
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end

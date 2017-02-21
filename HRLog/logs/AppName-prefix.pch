@@ -1,0 +1,14 @@
+//
+//  AppName-prefix.pch
+//  Pods
+//
+//  Created by Alexander Shipin on 21/02/2017.
+//
+//
+
+#ifndef AppName_prefix_h
+#define AppName_prefix_h
+
+#import <HRLoger/HRLog.h>
+
+#endif /* AppName_prefix_h */

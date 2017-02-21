@@ -2,12 +2,15 @@
 //  main.m
 //  HRLoger
 //
-//  Created by Alexander Shipin on 05/03/16.
-//  Copyright © 2016 Alexander Shipin. All rights reserved.
+//  Created by Alexander Shipin on 21/02/2017.
+//  Copyright © 2017 hr. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-int main(int argc, const char * argv[]) {
-    return NSApplicationMain(argc, argv);
+int main(int argc, char * argv[]) {
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
 }
