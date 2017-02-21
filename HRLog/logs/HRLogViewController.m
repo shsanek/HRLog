@@ -19,6 +19,7 @@
 @property (nonatomic, strong) NSString* email;
 @property (nonatomic, strong) NSString* appName;
 @property (nonatomic, strong) NSMutableString* text;
+
 @end
 
 @implementation HRLogViewController
@@ -52,18 +53,20 @@
 
 + (void) showViewController:(id) sender{
     [HRLogViewController logViewController].lastKeyVisableWindow = [UIApplication sharedApplication].keyWindow;
-    static UIWindow* window;
-    if (!window){
-        window = [UIWindow new];
-        window.rootViewController = [self logViewController];
-    }
+    UIWindow* window = [UIWindow new];
+    window.rootViewController = [self logViewController];
     UIWindow *topWindow = [UIApplication sharedApplication].windows.lastObject;
     window.windowLevel = topWindow.windowLevel + 1;
     [window makeKeyAndVisible];
     window.hidden = NO;
     [HRLogViewController logViewController].currentWindow = window;
-    [[HRLogViewController logViewController].textView setNeedsLayout];
-    [[HRLogViewController logViewController].textView layoutIfNeeded];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.textView.text = self.text;
+    CGFloat y = self.textView.contentSize.height - self.textView.frame.size.height;
+    self.textView.contentOffset = CGPointMake(0, y);
 }
 
 #pragma mark -
@@ -73,6 +76,7 @@
 
 #pragma mark 
 - (IBAction)pressedButtonClose:(id)sender{
+    self.currentWindow.rootViewController = nil;
     self.currentWindow.hidden = YES;
     [self.lastKeyVisableWindow makeKeyAndVisible];
 }
