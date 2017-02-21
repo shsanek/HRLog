@@ -15,6 +15,33 @@
 
 @end
 
+void HRBeginLog(NSString* format,...){
+    va_list argumentList;
+    va_start(argumentList, format);
+    NSString* text = [[NSMutableString alloc] initWithFormat:format
+                                                   arguments:argumentList];
+    va_end(argumentList);
+    [[HRLoger loger] addText:text];
+    NSString* symbol = [HRLoger loger].startSymbol;
+    [[HRLoger loger] setStartSymbol:[@" " stringByAppendingString:symbol]];
+}
+
+void HREndLog(){
+    NSString* symbol = [HRLoger loger].startSymbol;
+    if (symbol.length > 0) {
+        [[HRLoger loger] setStartSymbol:[symbol stringByReplacingCharactersInRange:NSMakeRange(0, 1)
+                                                                        withString:@""]];
+    }
+}
+
+void HRNameObjectLog(NSString* name,NSString* format,...){
+    va_list argumentList;
+    va_start(argumentList, format);
+    NSString* text = [[NSMutableString alloc] initWithFormat:format
+                                                   arguments:argumentList];
+    va_end(argumentList);
+    HRLog(@"%@:<%@>",name,text);
+}
 
 void HRLog(NSString* format,...){
     va_list argumentList;

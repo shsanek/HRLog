@@ -20,4 +20,9 @@ void HRLog(NSString* format,...);
 void HRErrorLog(NSError * error,NSString* format,...);
 void HRSenderErrorLog(id sender,NSError * error,NSString* format,...);
 
+void HRBeginLog(NSString* format,...);
+void HREndLog();
+void HRNameObjectLog(NSString* name,NSString* format,...);
+
+
 #endif /* HRLog_h */
