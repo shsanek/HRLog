@@ -1,1 +1,0 @@
-../../../../../HRLog/logs/loogbookmanger/subclasses/HRServerLogbookManger.h

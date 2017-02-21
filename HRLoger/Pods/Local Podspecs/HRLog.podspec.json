@@ -3,7 +3,7 @@
   "platforms": {
     "ios": "8.0"
   },
-  "version": "0.1.0",
+  "version": "0.3.0",
   "summary": "HRLog pof for custom loger",
   "description": "HRLog pod for custom log and visual debuger and sending bag reports",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/shsanek/HRLog.git",
-    "tag": "0.1.0"
+    "tag": "0.3.0"
   },
   "source_files": [
     "HRLog",
