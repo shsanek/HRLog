@@ -24,6 +24,10 @@
     HRLog(@"pressed button %d",rand());
 }
 
+- (IBAction)pressedButton2:(id)sender {
+    HRLog(@"pressed button duplecate");
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -73,6 +73,7 @@ void HRSenderErrorLog(id sender,NSError * error,NSString* format,...){
 
 @property (nonatomic, strong, readwrite) NSString* localPath;
 @property (nonatomic, strong) NSFileHandle* fileHandle;
+- (dispatch_queue_t) workQueue;
 
 @end
 
@@ -133,15 +134,22 @@ void HRSenderErrorLog(id sender,NSError * error,NSString* format,...){
 - (void) addedInFile:(NSString*) text{
     __weak typeof(self) weakSelf = self;
     
-    dispatch_async([self workQueue], ^{
-        [weakSelf.fileHandle writeData:[text dataUsingEncoding:NSUTF8StringEncoding]];
-        [weakSelf.fileHandle synchronizeFile];
-    });
+    [weakSelf.fileHandle writeData:[text dataUsingEncoding:NSUTF8StringEncoding]];
+    [weakSelf.fileHandle synchronizeFile];
+    
     
     if ([weakSelf.delegate respondsToSelector:@selector(logSession:appendSting:)]) {
         [weakSelf.delegate logSession:weakSelf appendSting:text];
     }
 }
+
+@end
+
+@interface HRLoger ()
+
+@property (nonatomic, strong) NSString* lastText;
+@property (nonatomic, assign) NSInteger numberOfDuplecateMessage;
+@property (nonatomic, assign) BOOL duplecateMessage;
 
 @end
 
@@ -212,19 +220,33 @@ void HRSenderErrorLog(id sender,NSError * error,NSString* format,...){
     [self load];
 }
 
-- (void) addText:(NSString*) text{
+- (void) addText:(NSString*) t{
     if (self.printInNSLog) {
-        NSLog(@"%@",text);
+        NSLog(@"%@",t);
     }
-    if (!self.notAddDateInLog) {
-        text = [[[NSDate date] description] stringByAppendingString:text];
-    }
-    if (self.addNewRow) {
-        text = [text stringByAppendingString:@"\n"];
-    }
-    text = [self.startSymbol stringByAppendingString:text];
-    [self.currentSession addedInFile:text];
-    
+    dispatch_async([self.currentSession workQueue], ^{
+        NSString* text = t;
+        if (self.replaceDuplicatesMessage && [self.lastText isEqualToString:text] ) {
+            if (self.numberOfDuplecateMessage == 0) {
+                [self.currentSession addedInFile:@"<THIS MESSAGE WAS REPEATED ... "];
+            }
+            self.numberOfDuplecateMessage ++;
+            return ;
+        } else if (self.replaceDuplicatesMessage && self.numberOfDuplecateMessage != 0) {
+            [self.currentSession addedInFile:[NSString stringWithFormat:@"%d>",self.numberOfDuplecateMessage + 1]];
+        }
+        text = t;
+        self.lastText = t;
+        self.numberOfDuplecateMessage = 0;
+        if (!self.notAddDateInLog) {
+            text = [[[NSDate date] description] stringByAppendingString:text];
+        }
+        text = [self.startSymbol stringByAppendingString:text];
+        if (self.addNewRow && self.lastText) {
+            text = [@"\n" stringByAppendingString:text?text:@""];
+        }
+        [self.currentSession addedInFile:text];
+    });
 }
 
 @end

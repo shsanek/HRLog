@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.name         = "HRLog"
-  s.version      = "0.3.3"
+  s.version      = "0.3.4"
   s.summary      = "HRLog pof for custom loger"
   s.description  = "HRLog pod for custom log and visual debuger and sending bag reports"
   s.license      = "MIT"

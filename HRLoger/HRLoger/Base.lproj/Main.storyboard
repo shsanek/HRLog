@@ -28,10 +28,19 @@
                                     <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gg7-iw-AbZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8a0-6O-tyS">
+                                <rect key="frame" x="152" y="348" width="70" height="30"/>
+                                <state key="normal" title="Duplecate"/>
+                                <connections>
+                                    <action selector="pressedButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C7T-MD-jNn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8a0-6O-tyS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5uQ-h4-pA3"/>
                             <constraint firstItem="1Dd-cz-l5X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NYu-LS-kMo"/>
+                            <constraint firstItem="8a0-6O-tyS" firstAttribute="top" secondItem="1Dd-cz-l5X" secondAttribute="bottom" id="ePZ-vg-cs0"/>
                             <constraint firstItem="1Dd-cz-l5X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lTO-fh-VyO"/>
                         </constraints>
                     </view>

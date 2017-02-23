@@ -38,6 +38,7 @@
 @property (nonatomic, assign) NSInteger numberOfSessionForSave;//default 10
 @property (nonatomic, assign) BOOL printInNSLog;//default YES
 @property (nonatomic, assign) BOOL addNewRow;//default YES;
+@property (nonatomic, assign) BOOL replaceDuplicatesMessage;//id YES repetitive massage
 @property (nonatomic, strong, readonly) NSArray<HRLogSession*>* lastSessions;
 @property (nonatomic, strong, readonly) HRLogSession* currentSession;
 

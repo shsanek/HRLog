@@ -21,6 +21,7 @@
     [[HRLoger loger] startSesstion];
     [HRLoger loger].notAddDateInLog = YES;
     [HRLoger loger].startSymbol = @">";
+    [HRLoger loger].replaceDuplicatesMessage = YES;
     [HRLogViewController setAppName:@"TestApp" withEmail:@"example@gmail.com"];
     [HRLogViewController addGestureShowInWindow:self.window];
     return YES;
