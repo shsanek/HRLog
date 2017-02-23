@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.description  = "HRLog pod for custom log and visual debuger and sending bag reports"
   s.license      = "MIT"
   s.author             = { "shsanek" => "shipin@sibers.com" }
-  s.source       = { :git => "https://github.com/shsanek/HRLog.git", :tag => "0.3.3" }
+  s.source       = { :git => "https://github.com/shsanek/HRLog.git", :tag => "0.3.4" }
   s.source_files  = "HRLog", "HRLog/**/*.{h,m}"
   s.resources = ["HRLog/**/*.storyboard"]
   s.public_header_files = "HRLog/**/*.h"
