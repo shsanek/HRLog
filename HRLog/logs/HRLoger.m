@@ -233,7 +233,7 @@ void HRSenderErrorLog(id sender,NSError * error,NSString* format,...){
             self.numberOfDuplecateMessage ++;
             return ;
         } else if (self.replaceDuplicatesMessage && self.numberOfDuplecateMessage != 0) {
-            [self.currentSession addedInFile:[NSString stringWithFormat:@"%d>",self.numberOfDuplecateMessage + 1]];
+            [self.currentSession addedInFile:[NSString stringWithFormat:@"%d>",((int)self.numberOfDuplecateMessage) + 1]];
         }
         text = t;
         self.lastText = t;
